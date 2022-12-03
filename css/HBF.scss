@@ -1,0 +1,41 @@
+$textstyle:'Segoe UI';
+$colorbackground:#FBFAF9;
+$colorblack:#000000;
+$colormaroon:#490206;
+body{
+    margin: 0px;
+    padding: 0px;
+    background-image: url("/media/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    .topmenu{
+        display: flex;
+        justify-content: space-between;
+        background-color: #fbfaf9;
+        padding: 20px;
+        .menulogo{
+            width: 15vw;
+        }
+        .menuitem{
+            
+            height: fit-content;
+            align-self: center;
+            a{
+                text-decoration: none;
+                color: black;
+                font-family:$textstyle;
+                font-weight: 500;
+                margin-right: 20px;
+            }
+        }
+        .socialicons{
+            height: fit-content;
+            align-self: center;
+            a{
+                img{
+                    width: 50px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,38 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background-image: url("/media/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body .topmenu {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fbfaf9;
+  padding: 20px;
+}
+body .topmenu .menulogo {
+  width: 15vw;
+}
+body .topmenu .menuitem {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  align-self: center;
+}
+body .topmenu .menuitem a {
+  text-decoration: none;
+  color: black;
+  font-family: "Segoe UI";
+  font-weight: 500;
+  margin-right: 20px;
+}
+body .topmenu .socialicons {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  align-self: center;
+}
+body .topmenu .socialicons a img {
+  width: 50px;
+}/*# sourceMappingURL=HBF.css.map */
