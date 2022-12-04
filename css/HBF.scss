@@ -118,7 +118,9 @@ body{
             }
             .servicegroup{
                 display: flex;
+                flex-wrap: wrap;
                 justify-content: space-around;
+                column-gap: 50px;
                 
                 .servicetab{
                     padding-bottom: 20px;
@@ -148,5 +150,34 @@ body{
                 }
             }  
         }
+        .locdetails{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .lochead{
+                font-family: $generalstyle;
+                font-weight: $headingweight;
+                text-align: center;
+            }
+            .mapdetails{
+                width: 80vw;
+                display: flex;
+                justify-content: space-around;
+                .mapouter{
+                    width: 50%;
+                    
+                }
+                .mapdesc{
+                    width: fit-content;
+                }
+            }
+            
+        }
     }  
+    .footerpart{
+        background-color: #000000d3;
+        height: 40vh;
+    }
 }

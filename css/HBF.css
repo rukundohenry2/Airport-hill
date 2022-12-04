@@ -115,7 +115,10 @@ body .middlepart .services .servicehead {
 }
 body .middlepart .services .servicegroup {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
 }
 body .middlepart .services .servicegroup .servicetab {
   padding-bottom: 20px;
@@ -141,4 +144,32 @@ body .middlepart .services .servicegroup .servicetab .minihead .iconmini {
 body .middlepart .services .servicegroup .servicetab .minihead .headserve {
   font-weight: 500;
   margin: 15px 0px 15px 10px;
+}
+body .middlepart .locdetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .middlepart .locdetails .lochead {
+  font-family: "Segoe UI";
+  font-weight: 550;
+  text-align: center;
+}
+body .middlepart .locdetails .mapdetails {
+  width: 80vw;
+  display: flex;
+  justify-content: space-around;
+}
+body .middlepart .locdetails .mapdetails .mapouter {
+  width: 50%;
+}
+body .middlepart .locdetails .mapdetails .mapdesc {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+body .footerpart {
+  background-color: rgba(0, 0, 0, 0.8274509804);
+  height: 40vh;
 }/*# sourceMappingURL=HBF.css.map */
