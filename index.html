@@ -12,15 +12,20 @@
     <div class="topmenu">
         <img class="menulogo" src="media/logo/AirportHill_Logo.png" alt="">
         <div class="menuitem">
-            <a href="">HOME</a>
-            <a href="">SERVICES</a>
-            <a href="">LOCATION</a>
+            <a href="#servelink">SERVICES</a>
             <a href="">BOOKING</a>
+            <a href="#contlink">CONTACT US</a>
+            
         </div>
         <div class="socialicons">
             <a href=""><img src="media/socialIcons/icons8_instagram_96px_2.png" alt=""></a>
             <a href=""><img src="media/socialIcons/icons8_facebook_96px_2.png" alt=""></a>
             <a href=""><img src="media/socialIcons/icons8_linkedin_96px_1.png" alt=""></a>
+        </div>
+        <div class="burger" onclick="toggleMobileMenu();">
+            <div></div>
+            <div></div>
+            <div></div>
         </div>
     </div>
     <div class="space"> 
@@ -59,7 +64,7 @@
                 
             </div>
         </div>
-        <div class="services">
+        <div id="servelink" class="services">
             <h2 class="servicehead">SERVICES</h2>
             <div class="servicegroup">
                 <div class="servicetab">
@@ -105,11 +110,11 @@
                 
             </div>
         </div>
-        <div class="locdetails">
-            <h2 class="lochead">LOCATION</h2>
+        <div id="contlink" class="locdetails">
+            <h2 class="lochead">CONTACT US</h2>
             <div class="mapdetails">
                 <div class="mapdesc">
-                    <h3>CONTACT US</h3>
+                    <h3>SEND MESSAGE</h3>
                     <form class="contactform" action="" method="post">
                         <input class="formcomponent" type="text" placeholder="Name">
                         <input class="formcomponent" type="text" placeholder="Email">
@@ -129,7 +134,7 @@
             <a href="">Booking</a>|
             <a href="">Privacy & legal</a>
         </div>
-        <p>Airporthill.com is property of Airporthill motel</p>
+        <p class="copyair">Airporthill.com is property of Airporthill motel</p>
     </div>
     
 </body>

@@ -1,11 +1,21 @@
 $generalstyle:'Poppins';
 $headingweight:500;
 $heading1weight:400;
-$headingsize:30px;
-$parasize:20px;
+
 $colorbackground:#FBFAF9;
 $colorblack:#000000;
 $colormaroon:#490206;
+
+//phone sizes
+$textpc:large;
+$texttab:smaller;
+$textphone:15px;
+$headpc:x-large;
+$headtab:large;
+$headphone:smaller;
+html {
+    scroll-behavior: smooth;
+  }
 body{
     margin: 0px;
     padding: 0px;
@@ -44,6 +54,35 @@ body{
                 }
             }
         }
+        .burger{
+            border: $colormaroon 3px solid; 
+            border-radius: 4px;
+            align-self: center;
+            display: none;
+            height: fit-content;
+            margin-right: 4px;
+            cursor: pointer;
+            div{
+                width: 20px;
+                background-color: $colormaroon;
+                height: 3px;
+                margin: 4px;
+            }
+        }
+        @media(max-width:820px){
+            .menulogo{
+                width: 20vw;
+            }
+            .socialicons{
+                display: none;
+            }
+            .menuitem{
+                display: none;
+            }
+            .burger{
+                display: block;
+            }
+        }
     }
     .space{
         height: 70vh;
@@ -73,41 +112,77 @@ body{
                 height: 50px;
             }
         }
+        @media(max-width:700px){
+            height: 50vh;
+            .placedesc{
+                font-size: 30px;
+            }
+            .viewicons{
+                img{
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+        }
+        @media(max-width:560px){
+            height: 30vh;
+            .placedesc{
+                font-size: 20px;
+            }
+        }
     }
+
+
+    //about part
     .middlepart{
         background-color: $colorbackground;
         .about{
             background-color: $colorbackground;
             display: flex;
             flex-direction: column;
-            padding:40px 40px 40px 40px ;
-            
+            padding:0vw 10vw 3vw 10vw ;
+            align-items: center;
             .abouthead{
-                font-family: $generalstyle;
                 font-weight: $headingweight;
-                margin-bottom: 20px;
+                font-size:$headpc;
                 width: fit-content;
-                align-self: center;
+                margin-bottom: 0px;
             }
             .aboutdescription{
-                font-family: $generalstyle;
-                width: 80vw;
-                align-self: center;
                 text-align: justify;
-                padding-bottom: 40px;
+                font-size:$textpc;
             }
             .randimages{
                 display: flex;
                 justify-content: space-around;
-                width: 80vw;
-                align-self: center;
                 img{
-                    width: 47%;
+                    width: 48%;
                     border-radius: 5px;
                 }
             }
+            @media(max-width:700px){
+                padding:0vw 5vw 3vw 5vw ;
+                .abouthead{
+                    font-weight: $headingweight;
+                    font-size: $headpc;
+                }
+                .aboutdescription{
+                    text-align: justify;
+                    font-size: $textpc;
+                }
+            }
+            @media(max-width:560px){
+                padding:0vw 2vw 1vw 2vw;
+                .abouthead{
+                    font-weight: $headingweight;
+                    font-size: $headpc;
+                }
+                .aboutdescription{
+                    text-align: justify;
+                    font-size: $textpc;
+                }
+            }
         }
-        
         .services{
             background-color: #FFF6EC;
             justify-content: space-around;
@@ -115,9 +190,9 @@ body{
             padding-top: 5px;
             
             .servicehead{
-                font-family: $generalstyle;
                 font-weight: $headingweight;
                 text-align: center;
+                font-size: $headpc;
             }
             .servicegroup{
                 display: flex;
@@ -136,6 +211,7 @@ body{
                     .servicedesc{
                         text-align: justify;
                         margin-top: 0;
+                        font-size: $textpc;
                     }
                     .minihead{
                         display: flex;
@@ -152,7 +228,43 @@ body{
                         }
                     }
                 }
-            }  
+            }
+            @media(max-width:700px){
+                padding: 0 5vw 0vw 5vw;
+                .servicegroup{
+                    .servicetab{
+                        width: 40%;
+                        .servImg{
+                        }
+                        .servicedesc{
+                        }
+                        .minihead{
+                            .iconmini{  
+                            }
+                            .headserve{
+                            }
+                        }
+                    }
+                }
+            } 
+            @media(max-width:560px){
+                padding: 0 2vw 0vw 2vw;
+                .servicegroup{
+                    .servicetab{
+                        width: 80%;
+                        .servImg{
+                        }
+                        .servicedesc{
+                        }
+                        .minihead{
+                            .iconmini{  
+                            }
+                            .headserve{
+                            }
+                        }
+                    }
+                }
+            } 
         }
         .locdetails{
             display: flex;
@@ -174,7 +286,6 @@ body{
                 .mapouter{
                     width: 50%;
                     margin: 0% 0% 0% 0%;
-                    
                 }
                 .mapdesc{
                     width: 50%;
@@ -184,7 +295,6 @@ body{
                         font-family: $generalstyle;
                         font-size: medium;
                         font-weight: $headingweight;
-                        
                         color: $colormaroon;
                     }
                     .contactform{
@@ -226,7 +336,18 @@ body{
                         }
                     }
                 }
+                @media (max-width:560px){
+                    flex-wrap: wrap;
+                    .mapdesc{
+                        width: 100%;
+                        margin-bottom: 20px;
+                    }
+                    .mapouter{
+                        width: 100%;
+                    }
+                }
             }  
+
         }
     }  
     .footerpart{
@@ -240,6 +361,18 @@ body{
             a{
                 text-decoration: none;
                 color: white;
+                
+            }
+            
+        }
+        
+        @media (max-width:560px){
+            justify-content: space-around;
+            .bottomlinks{
+                display: none;
+            }
+            .copyair{
+                display: none;
             }
         }
     }
