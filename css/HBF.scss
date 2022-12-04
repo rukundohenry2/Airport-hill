@@ -6,7 +6,7 @@ $colormaroon:#490206;
 body{
     margin: 0px;
     padding: 0px;
-    background-image: url('/media/background.jpg');
+    background-image: url('../media/background.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -98,9 +98,8 @@ body{
                 justify-content: space-around;
                 width: 80vw;
                 align-self: center;
-                
                 img{
-                    width: 30%;
+                    width: 45%;
                     border-radius: 5px;
                 }
             }
