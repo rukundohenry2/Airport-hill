@@ -5,7 +5,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  font-family: "Segoe UI";
+  font-family: "Poppins";
 }
 body .topmenu {
   display: flex;
@@ -25,7 +25,7 @@ body .topmenu .menuitem {
 body .topmenu .menuitem a {
   text-decoration: none;
   color: black;
-  font-family: "Segoe UI";
+  font-family: "Poppins";
   font-weight: 500;
   margin-right: 20px;
 }
@@ -45,6 +45,7 @@ body .space {
   align-items: center;
   padding: 20px;
   justify-content: center;
+  background-color: rgba(0, 0, 0, 0.6862745098);
 }
 body .space .placedesc {
   color: white;
@@ -77,8 +78,8 @@ body .middlepart .about {
   padding: 40px 40px 40px 40px;
 }
 body .middlepart .about .abouthead {
-  font-family: "Segoe UI";
-  font-weight: 550;
+  font-family: "Poppins";
+  font-weight: 500;
   margin-bottom: 20px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -86,7 +87,7 @@ body .middlepart .about .abouthead {
   align-self: center;
 }
 body .middlepart .about .aboutdescription {
-  font-family: "Segoe UI";
+  font-family: "Poppins";
   width: 80vw;
   align-self: center;
   text-align: justify;
@@ -109,8 +110,8 @@ body .middlepart .services {
   padding-top: 5px;
 }
 body .middlepart .services .servicehead {
-  font-family: "Segoe UI";
-  font-weight: 550;
+  font-family: "Poppins";
+  font-weight: 500;
   text-align: center;
 }
 body .middlepart .services .servicegroup {
@@ -131,6 +132,7 @@ body .middlepart .services .servicegroup .servicetab .servImg {
 }
 body .middlepart .services .servicegroup .servicetab .servicedesc {
   text-align: justify;
+  margin-top: 0;
 }
 body .middlepart .services .servicegroup .servicetab .minihead {
   display: flex;
@@ -152,22 +154,78 @@ body .middlepart .locdetails {
   align-items: center;
 }
 body .middlepart .locdetails .lochead {
-  font-family: "Segoe UI";
-  font-weight: 550;
+  font-family: "Poppins";
+  font-weight: 500;
   text-align: center;
 }
 body .middlepart .locdetails .mapdetails {
   width: 80vw;
   display: flex;
   justify-content: space-around;
+  margin-bottom: 50px;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
 }
 body .middlepart .locdetails .mapdetails .mapouter {
   width: 50%;
+  margin: 0% 0% 0% 0%;
 }
 body .middlepart .locdetails .mapdetails .mapdesc {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: 50%;
+}
+body .middlepart .locdetails .mapdetails .mapdesc h3 {
+  font-family: "Poppins";
+  font-size: medium;
+  font-weight: 500;
+  color: #490206;
+}
+body .middlepart .locdetails .mapdetails .mapdesc .contactform {
+  display: flex;
+  flex-direction: column;
+}
+body .middlepart .locdetails .mapdetails .mapdesc .contactform .formcomponent {
+  border-radius: 0px;
+  border: rgb(153, 153, 153) solid 1px;
+  height: 40px;
+  width: 96%;
+  margin-bottom: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+body .middlepart .locdetails .mapdetails .mapdesc .contactform .formcomponent::-moz-placeholder {
+  font-family: "Poppins";
+}
+body .middlepart .locdetails .mapdetails .mapdesc .contactform .formcomponent:-ms-input-placeholder {
+  font-family: "Poppins";
+}
+body .middlepart .locdetails .mapdetails .mapdesc .contactform .formcomponent::placeholder {
+  font-family: "Poppins";
+}
+body .middlepart .locdetails .mapdetails .mapdesc .contactform #formcomponent {
+  border-radius: 0px;
+  border: rgb(153, 153, 153) solid 1px;
+  width: 96%;
+  margin-bottom: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+body .middlepart .locdetails .mapdetails .mapdesc .contactform #formcomponent::-moz-placeholder {
+  font-family: "Poppins";
+}
+body .middlepart .locdetails .mapdetails .mapdesc .contactform #formcomponent:-ms-input-placeholder {
+  font-family: "Poppins";
+}
+body .middlepart .locdetails .mapdetails .mapdesc .contactform #formcomponent::placeholder {
+  font-family: "Poppins";
+}
+body .middlepart .locdetails .mapdetails .mapdesc .contactform .submitbutton {
+  align-self: center;
+  border-radius: 0px;
+  border: rgb(153, 153, 153) solid 0px;
+  background-color: #490206;
+  width: 35%;
+  height: 30px;
+  color: white;
 }
 body .footerpart {
   background-color: rgba(0, 0, 0, 0.8274509804);

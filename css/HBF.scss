@@ -1,5 +1,8 @@
-$generalstyle:'Segoe UI';
-$headingweight:550;
+$generalstyle:'Poppins';
+$headingweight:500;
+$heading1weight:400;
+$headingsize:30px;
+$parasize:20px;
 $colorbackground:#FBFAF9;
 $colorblack:#000000;
 $colormaroon:#490206;
@@ -13,7 +16,7 @@ body{
     font-family: $generalstyle;
     
     .topmenu{
-        display: flex;
+        display: flex;  
         justify-content: space-between;
         background-color: #fbfaf9;
         padding: 20px;
@@ -49,6 +52,8 @@ body{
         align-items: center;
         padding: 20px;
         justify-content: center;
+        background-color: #000000af;
+        
         .placedesc{
             color: white;
             width: fit-content;
@@ -66,10 +71,8 @@ body{
             img{
                 width: 50px;
                 height: 50px;
-                
             }
         }
-        
     }
     .middlepart{
         background-color: $colorbackground;
@@ -132,6 +135,7 @@ body{
                     }
                     .servicedesc{
                         text-align: justify;
+                        margin-top: 0;
                     }
                     .minihead{
                         display: flex;
@@ -165,15 +169,64 @@ body{
                 width: 80vw;
                 display: flex;
                 justify-content: space-around;
+                margin-bottom: 50px;
+                column-gap: 20px;
                 .mapouter{
                     width: 50%;
+                    margin: 0% 0% 0% 0%;
                     
                 }
                 .mapdesc{
-                    width: fit-content;
+                    width: 50%;
+                    
+                    
+                    h3{
+                        font-family: $generalstyle;
+                        font-size: medium;
+                        font-weight: $headingweight;
+                        
+                        color: $colormaroon;
+                    }
+                    .contactform{
+                        display: flex;
+                        flex-direction: column;
+                        .formcomponent{
+                            border-radius: 0px;
+                            border: rgb(153, 153, 153) solid 1px;
+                            height: 40px;
+                            width: 96%;
+                            margin-bottom:30px ;
+                            padding-left: 10px;
+                            padding-right: 10px;
+                            
+                            &::placeholder{
+                                font-family: $generalstyle;
+                            }
+                        }
+                        #formcomponent{
+                            border-radius: 0px;
+                            border: rgb(153, 153, 153) solid 1px;
+                            width: 96%;
+                            margin-bottom:30px ;
+                            padding-left: 10px;
+                            padding-right: 10px;
+                            
+                            &::placeholder{
+                                font-family: $generalstyle;
+                            }
+                        }
+                        .submitbutton{
+                            align-self: center;
+                            border-radius: 0px;
+                            border: rgb(153, 153, 153) solid 0px;
+                            background-color: $colormaroon;
+                            width: 35%;
+                            height: 30px;
+                            color: white;
+                        }
+                    }
                 }
-            }
-            
+            }  
         }
     }  
     .footerpart{
