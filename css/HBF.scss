@@ -231,6 +231,16 @@ body{
     }  
     .footerpart{
         background-color: #000000d3;
-        height: 40vh;
+        display: flex;
+        justify-content: space-between;
+        padding:0px 20px 0px 20px;
+        color: white;
+        align-items: center;
+        .bottomlinks{
+            a{
+                text-decoration: none;
+                color: white;
+            }
+        }
     }
 }

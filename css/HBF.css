@@ -229,5 +229,13 @@ body .middlepart .locdetails .mapdetails .mapdesc .contactform .submitbutton {
 }
 body .footerpart {
   background-color: rgba(0, 0, 0, 0.8274509804);
-  height: 40vh;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 20px 0px 20px;
+  color: white;
+  align-items: center;
+}
+body .footerpart .bottomlinks a {
+  text-decoration: none;
+  color: white;
 }/*# sourceMappingURL=HBF.css.map */
