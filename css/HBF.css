@@ -4,6 +4,8 @@ body {
   background-image: url("/media/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
+  font-family: "Segoe UI";
 }
 body .topmenu {
   display: flex;
@@ -35,4 +37,108 @@ body .topmenu .socialicons {
 }
 body .topmenu .socialicons a img {
   width: 50px;
+}
+body .space {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  justify-content: center;
+}
+body .space .placedesc {
+  color: white;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 40px;
+  font-family: "black jack";
+  text-transform: capitalize;
+}
+body .space .viewicons {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 30vw;
+  display: flex;
+  justify-content: space-around;
+}
+body .space .viewicons img {
+  width: 50px;
+  height: 50px;
+}
+body .middlepart {
+  background-color: #FBFAF9;
+}
+body .middlepart .about {
+  background-color: #FBFAF9;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 40px 40px 40px;
+}
+body .middlepart .about .abouthead {
+  font-family: "Segoe UI";
+  font-weight: 550;
+  margin-bottom: 20px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  align-self: center;
+}
+body .middlepart .about .aboutdescription {
+  font-family: "Segoe UI";
+  width: 80vw;
+  align-self: center;
+  text-align: justify;
+  padding-bottom: 40px;
+}
+body .middlepart .about .randimages {
+  display: flex;
+  justify-content: space-around;
+  width: 80vw;
+  align-self: center;
+}
+body .middlepart .about .randimages img {
+  width: 30%;
+  border-radius: 5px;
+}
+body .middlepart .services {
+  background-color: #FFF6EC;
+  justify-content: space-around;
+  padding: 0 10vw 0vw 10vw;
+  padding-top: 5px;
+}
+body .middlepart .services .servicehead {
+  font-family: "Segoe UI";
+  font-weight: 550;
+  text-align: center;
+}
+body .middlepart .services .servicegroup {
+  display: flex;
+  justify-content: space-around;
+}
+body .middlepart .services .servicegroup .servicetab {
+  padding-bottom: 20px;
+  text-align: center;
+  width: 25%;
+}
+body .middlepart .services .servicegroup .servicetab .servImg {
+  width: 100%;
+  border-radius: 100%;
+}
+body .middlepart .services .servicegroup .servicetab .servicedesc {
+  text-align: justify;
+}
+body .middlepart .services .servicegroup .servicetab .minihead {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .middlepart .services .servicegroup .servicetab .minihead .iconmini {
+  width: 20px;
+  height: 20px;
+}
+body .middlepart .services .servicegroup .servicetab .minihead .headserve {
+  font-weight: 500;
+  margin: 15px 0px 15px 10px;
 }/*# sourceMappingURL=HBF.css.map */

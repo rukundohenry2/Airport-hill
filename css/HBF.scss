@@ -1,4 +1,5 @@
-$textstyle:'Segoe UI';
+$generalstyle:'Segoe UI';
+$headingweight:550;
 $colorbackground:#FBFAF9;
 $colorblack:#000000;
 $colormaroon:#490206;
@@ -8,6 +9,9 @@ body{
     background-image: url("/media/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
+    font-family: $generalstyle;
+    
     .topmenu{
         display: flex;
         justify-content: space-between;
@@ -23,7 +27,7 @@ body{
             a{
                 text-decoration: none;
                 color: black;
-                font-family:$textstyle;
+                font-family:$generalstyle;
                 font-weight: 500;
                 margin-right: 20px;
             }
@@ -38,4 +42,112 @@ body{
             }
         }
     }
+    .space{
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        justify-content: center;
+        .placedesc{
+            color: white;
+            width: fit-content;
+            font-size: 40px;
+            font-family: "black jack";
+            text-transform:capitalize;
+        }
+        .viewicons{
+            
+            height: fit-content;
+            width: 30vw;
+            display: flex;
+            justify-content: space-around;
+            
+            img{
+                width: 50px;
+                height: 50px;
+                
+            }
+        }
+        
+    }
+    .middlepart{
+        background-color: $colorbackground;
+        .about{
+            background-color: $colorbackground;
+            display: flex;
+            flex-direction: column;
+            padding:40px 40px 40px 40px ;
+            
+            .abouthead{
+                font-family: $generalstyle;
+                font-weight: $headingweight;
+                margin-bottom: 20px;
+                width: fit-content;
+                align-self: center;
+            }
+            .aboutdescription{
+                font-family: $generalstyle;
+                width: 80vw;
+                align-self: center;
+                text-align: justify;
+                padding-bottom: 40px;
+            }
+            .randimages{
+                display: flex;
+                justify-content: space-around;
+                width: 80vw;
+                align-self: center;
+                
+                img{
+                    width: 30%;
+                    border-radius: 5px;
+                }
+            }
+        }
+        
+        .services{
+            background-color: #FFF6EC;
+            justify-content: space-around;
+            padding: 0 10vw 0vw 10vw;
+            padding-top: 5px;
+            
+            .servicehead{
+                font-family: $generalstyle;
+                font-weight: $headingweight;
+                text-align: center;
+            }
+            .servicegroup{
+                display: flex;
+                justify-content: space-around;
+                
+                .servicetab{
+                    padding-bottom: 20px;
+                    text-align: center;
+                    width: 25%;
+                    .servImg{
+                        width: 100%;
+                        border-radius: 100%;
+                    }
+                    .servicedesc{
+                        text-align: justify;
+                    }
+                    .minihead{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                       
+                        .iconmini{
+                            width: 20px;
+                            height: 20px;
+                        }
+                        .headserve{
+                            font-weight: 500;
+                            margin: 15px 0px 15px 10px;
+                        }
+                    }
+                }
+            }  
+        }
+    }  
 }
