@@ -172,7 +172,7 @@ body .middlepart .about .randimages img {
 }
 @media (max-width: 560px) {
   body .middlepart .about {
-    padding: 0vw 3vw 1vw 3vw;
+    padding: 0vw 7vw 1vw 7vw;
   }
   body .middlepart .about .abouthead {
     font-weight: 500;
