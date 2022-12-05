@@ -12,11 +12,12 @@
 <body>
     <div class="topmenu">
         <img class="menulogo" src="media/logo/AirportHill_Logo.png" alt="">
-        <div class="menuitem">
+        <div id="menuitem" onclick="toggleMobileMenu()">
+            <img class="innerlogo" src="media/logo/AirportHill_Logo.png" alt="">
             <a href="#servelink">SERVICES</a>
             <a href="">BOOKING</a>
             <a href="#contlink">CONTACT US</a>
-            
+            <img class="innerclose" src="media/icons/close.png" alt="">
         </div>
         <div class="socialicons">
             <a href=""><img src="media/socialIcons/icons8_instagram_96px_2.png" alt=""></a>
@@ -59,6 +60,7 @@
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo, odit aperiam. Laboriosam illum pariatur aperiam eum cum fugit? Iure numquam inventore voluptatum consectetur accusamus vero doloribus labore! Vero, consequuntur harum.
                 </p>
             </div>
+            <h2 class="abouthead">GALLERY</h2>
             <div class="randimages">
                 <img class="disimg" src="media/gallery/img4.jpg" alt="">
                 <img class="remimg" src="media/gallery/img5.jpg" alt="">
@@ -137,6 +139,16 @@
         </div>
         <p class="copyair">Airporthill.com is property of Airporthill motel</p>
     </div>
-    
+    <script>
+        // var burger = document.querySelector("");
+        // var flyoutmenu = document.querySelector("");
+        // burger.addEventListener("click",showMenu,false)
+        console.log("this is henry")
+
+        function toggleMobileMenu(){
+            document.querySelector('#menuitem').classList.toggle('show')
+            document.body.style.overflowX = "hidden";
+        }
+    </script>
 </body>
 </html>
