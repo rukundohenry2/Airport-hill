@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("fonts/Poppins-Regular.ttf");
+}
+@font-face {
+  font-family: "black jack";
+  src: url("fonts/blackjack.otf");
+}
 html {
   scroll-behavior: smooth;
 }
