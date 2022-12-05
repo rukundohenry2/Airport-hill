@@ -344,15 +344,16 @@ body .middlepart .locdetails .mapdetails .mapdesc .contactform .submitbutton {
   height: 30px;
   color: white;
 }
-@media (max-width: 560px) {
+@media (max-width: 700px) {
   body .middlepart .locdetails .lochead {
     font-size: large;
   }
   body .middlepart .locdetails .mapdetails {
+    width: 100vw;
     flex-wrap: wrap;
   }
   body .middlepart .locdetails .mapdetails .mapdesc {
-    width: 100%;
+    width: 80%;
     margin-bottom: 20px;
   }
   body .middlepart .locdetails .mapdetails .mapdesc h3 {

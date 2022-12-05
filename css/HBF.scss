@@ -366,17 +366,21 @@ body{
                 
             }  
 
-            @media (max-width:560px){
+            @media (max-width:700px){
                 .lochead{
                     font-size: $headphone;
                 }
                 .mapdetails{
+                    width: 100vw;
                     flex-wrap: wrap;
                     .mapdesc{
-                        width: 100%;
+                        width: 80%;
                         margin-bottom: 20px;
                         h3{
                             font-size: 13px;
+                        }
+                        .contactform{
+                            
                         }
                     }
                     .mapouter{
