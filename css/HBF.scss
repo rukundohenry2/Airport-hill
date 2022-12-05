@@ -7,20 +7,15 @@ $colorblack:#000000;
 $colormaroon:#490206;
 
 //phone sizes
-$textpc:large;
-$texttab:smaller;
-$textphone:15px;
 $headpc:x-large;
-$headtab:large;
-$headphone:smaller;
-@font-face {
-    font-family: 'Poppins';
-    src: url('fonts/Poppins-Regular.ttf');
-}
-@font-face {
-    font-family: 'black jack';
-    src: url('fonts/blackjack.otf');
-}
+$textpc:large;
+
+$headtab:larger;
+$texttab:large;
+
+$headphone:large;
+$textphone:small;
+
 html {
     scroll-behavior: smooth;
   }
@@ -137,7 +132,14 @@ body{
             .placedesc{
                 font-size: 20px;
             }
+            .viewicons{
+                img{
+                    width: 20px;
+                    height: 20px;
+                }
+            }
         }
+        
     }
 
 
@@ -172,7 +174,7 @@ body{
                 padding:0vw 5vw 3vw 5vw ;
                 .abouthead{
                     font-weight: $headingweight;
-                    font-size: $headpc;
+                    font-size: $headtab;
                 }
                 .aboutdescription{
                     text-align: justify;
@@ -180,22 +182,29 @@ body{
                 }
             }
             @media(max-width:560px){
-                padding:0vw 2vw 1vw 2vw;
+                padding:0vw 3vw 1vw 3vw;
                 .abouthead{
                     font-weight: $headingweight;
-                    font-size: $headpc;
+                    font-size: $headphone;
                 }
                 .aboutdescription{
                     text-align: justify;
-                    font-size: $textpc;
+                    font-size: $textphone;
+                }
+                .randimages{
+                    .disimg{
+                        display: none;
+                    }
+                    img{
+                        width: 100%;
+                    }
                 }
             }
         }
         .services{
             background-color: #FFF6EC;
             justify-content: space-around;
-            padding: 0 10vw 0vw 10vw;
-            padding-top: 5px;
+            padding: 1vw 10vw 0vw 10vw;
             
             .servicehead{
                 font-weight: $headingweight;
@@ -238,7 +247,12 @@ body{
                 }
             }
             @media(max-width:700px){
-                padding: 0 5vw 0vw 5vw;
+                padding: 1vw 5vw 0vw 5vw;
+                
+                .servicehead{
+                    font-size: $headphone;
+                    
+                }
                 .servicegroup{
                     .servicetab{
                         width: 40%;
@@ -256,18 +270,25 @@ body{
                 }
             } 
             @media(max-width:560px){
-                padding: 0 2vw 0vw 2vw;
+                padding: 1vw 2vw 0vw 2vw;
+                .servicehead{
+                    font-size: $headphone;
+                }
                 .servicegroup{
                     .servicetab{
-                        width: 80%;
+                        width: 95%;
                         .servImg{
                         }
                         .servicedesc{
+                            font-size: $textphone;
                         }
                         .minihead{
-                            .iconmini{  
+                            .iconmini{ 
+                                width: 18px;
+                                height: 18px; 
                             }
                             .headserve{
+                                font-size: 17px;
                             }
                         }
                     }
@@ -281,7 +302,7 @@ body{
             align-items: center;
 
             .lochead{
-                font-family: $generalstyle;
+                
                 font-weight: $headingweight;
                 text-align: center;
             }
@@ -297,8 +318,6 @@ body{
                 }
                 .mapdesc{
                     width: 50%;
-                    
-                    
                     h3{
                         font-family: $generalstyle;
                         font-size: medium;
@@ -344,18 +363,27 @@ body{
                         }
                     }
                 }
-                @media (max-width:560px){
+                
+            }  
+
+            @media (max-width:560px){
+                .lochead{
+                    font-size: $headphone;
+                }
+                .mapdetails{
                     flex-wrap: wrap;
                     .mapdesc{
                         width: 100%;
                         margin-bottom: 20px;
+                        h3{
+                            font-size: 13px;
+                        }
                     }
                     .mapouter{
                         width: 100%;
                     }
                 }
-            }  
-
+            }
         }
     }  
     .footerpart{

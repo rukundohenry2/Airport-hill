@@ -1,11 +1,3 @@
-@font-face {
-  font-family: "Poppins";
-  src: url("fonts/Poppins-Regular.ttf");
-}
-@font-face {
-  font-family: "black jack";
-  src: url("fonts/blackjack.otf");
-}
 html {
   scroll-behavior: smooth;
 }
@@ -130,6 +122,10 @@ body .space .viewicons img {
   body .space .placedesc {
     font-size: 20px;
   }
+  body .space .viewicons img {
+    width: 20px;
+    height: 20px;
+  }
 }
 body .middlepart {
   background-color: #FBFAF9;
@@ -167,7 +163,7 @@ body .middlepart .about .randimages img {
   }
   body .middlepart .about .abouthead {
     font-weight: 500;
-    font-size: x-large;
+    font-size: larger;
   }
   body .middlepart .about .aboutdescription {
     text-align: justify;
@@ -176,22 +172,27 @@ body .middlepart .about .randimages img {
 }
 @media (max-width: 560px) {
   body .middlepart .about {
-    padding: 0vw 2vw 1vw 2vw;
+    padding: 0vw 3vw 1vw 3vw;
   }
   body .middlepart .about .abouthead {
     font-weight: 500;
-    font-size: x-large;
+    font-size: large;
   }
   body .middlepart .about .aboutdescription {
     text-align: justify;
-    font-size: large;
+    font-size: small;
+  }
+  body .middlepart .about .randimages .disimg {
+    display: none;
+  }
+  body .middlepart .about .randimages img {
+    width: 100%;
   }
 }
 body .middlepart .services {
   background-color: #FFF6EC;
   justify-content: space-around;
-  padding: 0 10vw 0vw 10vw;
-  padding-top: 5px;
+  padding: 1vw 10vw 0vw 10vw;
 }
 body .middlepart .services .servicehead {
   font-weight: 500;
@@ -234,7 +235,10 @@ body .middlepart .services .servicegroup .servicetab .minihead .headserve {
 }
 @media (max-width: 700px) {
   body .middlepart .services {
-    padding: 0 5vw 0vw 5vw;
+    padding: 1vw 5vw 0vw 5vw;
+  }
+  body .middlepart .services .servicehead {
+    font-size: large;
   }
   body .middlepart .services .servicegroup .servicetab {
     width: 40%;
@@ -242,10 +246,23 @@ body .middlepart .services .servicegroup .servicetab .minihead .headserve {
 }
 @media (max-width: 560px) {
   body .middlepart .services {
-    padding: 0 2vw 0vw 2vw;
+    padding: 1vw 2vw 0vw 2vw;
+  }
+  body .middlepart .services .servicehead {
+    font-size: large;
   }
   body .middlepart .services .servicegroup .servicetab {
-    width: 80%;
+    width: 95%;
+  }
+  body .middlepart .services .servicegroup .servicetab .servicedesc {
+    font-size: small;
+  }
+  body .middlepart .services .servicegroup .servicetab .minihead .iconmini {
+    width: 18px;
+    height: 18px;
+  }
+  body .middlepart .services .servicegroup .servicetab .minihead .headserve {
+    font-size: 17px;
   }
 }
 body .middlepart .locdetails {
@@ -255,7 +272,6 @@ body .middlepart .locdetails {
   align-items: center;
 }
 body .middlepart .locdetails .lochead {
-  font-family: "Poppins";
   font-weight: 500;
   text-align: center;
 }
@@ -329,12 +345,18 @@ body .middlepart .locdetails .mapdetails .mapdesc .contactform .submitbutton {
   color: white;
 }
 @media (max-width: 560px) {
+  body .middlepart .locdetails .lochead {
+    font-size: large;
+  }
   body .middlepart .locdetails .mapdetails {
     flex-wrap: wrap;
   }
   body .middlepart .locdetails .mapdetails .mapdesc {
     width: 100%;
     margin-bottom: 20px;
+  }
+  body .middlepart .locdetails .mapdetails .mapdesc h3 {
+    font-size: 13px;
   }
   body .middlepart .locdetails .mapdetails .mapouter {
     width: 100%;
