@@ -12,13 +12,19 @@ body {
   font-family: "Poppins";
 }
 body .topmenu {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
   display: flex;
+  flex-wrap: nowrap;
   justify-content: space-between;
   background-color: #fbfaf9;
-  padding: 20px;
+  padding: 15px;
+  transition: top 0.3s;
 }
 body .topmenu .menulogo {
-  width: 15vw;
+  height: 10vh;
 }
 body .topmenu #menuitem {
   height: -webkit-fit-content;
@@ -44,6 +50,7 @@ body .topmenu .socialicons {
   height: -moz-fit-content;
   height: fit-content;
   align-self: center;
+  margin-right: 100px;
 }
 body .topmenu .socialicons a img {
   width: 50px;
@@ -67,7 +74,7 @@ body .topmenu .burger div {
 }
 @media (max-width: 820px) {
   body .topmenu .menulogo {
-    width: 20vw;
+    height: 9vh;
   }
   body .topmenu .socialicons {
     display: none;
@@ -101,6 +108,12 @@ body .topmenu .burger div {
   }
   body .topmenu .burger {
     display: block;
+    margin-right: 50px;
+  }
+}
+@media (max-width: 460px) {
+  body .topmenu .menulogo {
+    height: 7vh;
   }
 }
 body .space {
@@ -108,9 +121,9 @@ body .space {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.6862745098);
+  padding-top: 12vh;
 }
 body .space .placedesc {
   color: white;

@@ -10,26 +10,7 @@
     <title>Airport Hill</title>
 </head>
 <body>
-    <div class="topmenu">
-        <img class="menulogo" src="media/logo/AirportHill_Logo.png" alt="">
-        <div id="menuitem" onclick="toggleMobileMenu()">
-            <img class="innerlogo" src="media/logo/AirportHill_Logo.png" alt="">
-            <a href="#servelink">SERVICES</a>
-            <a href="">BOOKING</a>
-            <a href="#contlink">CONTACT US</a>
-            <img class="innerclose" src="media/icons/close.png" alt="">
-        </div>
-        <div class="socialicons">
-            <a href=""><img src="media/socialIcons/icons8_instagram_96px_2.png" alt=""></a>
-            <a href=""><img src="media/socialIcons/icons8_facebook_96px_2.png" alt=""></a>
-            <a href=""><img src="media/socialIcons/icons8_linkedin_96px_1.png" alt=""></a>
-        </div>
-        <div class="burger" onclick="toggleMobileMenu();">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-    </div>
+    
     <div class="space"> 
         <div class="placedesc">
             Your one stop destination in Rwanda
@@ -139,15 +120,47 @@
         </div>
         <p class="copyair">Airporthill.com is property of Airporthill motel</p>
     </div>
+    <div class="topmenu" id="topmen">
+        <img class="menulogo" src="media/logo/AirportHill_Logo.png" alt="">
+        <div id="menuitem" onclick="toggleMobileMenu()">
+            <img class="innerlogo" src="media/logo/AirportHill_Logo.png" alt="">
+            <a href="#servelink">SERVICES</a>
+            <a href="">BOOKING</a>
+            <a href="#contlink">CONTACT US</a>
+            <img class="innerclose" src="media/icons/close.png" alt="">
+        </div>
+        <div class="socialicons">
+            <a href=""><img src="media/socialIcons/icons8_instagram_96px_2.png" alt=""></a>
+            <a href=""><img src="media/socialIcons/icons8_facebook_96px_2.png" alt=""></a>
+            <a href=""><img src="media/socialIcons/icons8_linkedin_96px_1.png" alt=""></a>
+        </div>
+        <div class="burger" onclick="toggleMobileMenu();">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
     <script>
-        // var burger = document.querySelector("");
-        // var flyoutmenu = document.querySelector("");
-        // burger.addEventListener("click",showMenu,false)
-        console.log("this is henry")
+        
+        var prevScrollpos = window.pageYOffset
+        
 
         function toggleMobileMenu(){
             document.querySelector('#menuitem').classList.toggle('show')
-            document.body.style.overflowX = "hidden";
+            document.body.style.overflowX = "hidden"
+        }
+        
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                console.log("pull the menu bar out")
+                document.getElementById("topmen").style.top = "0"
+            } else {
+                document.getElementById("topmen").style.top = "-12vh"
+                console.log("make bar disappear")
+            }
+            prevScrollpos = currentScrollPos
         }
     </script>
 </body>
