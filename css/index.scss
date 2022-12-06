@@ -110,10 +110,10 @@ body{
                 margin-top: 20px;
                 display: flex;
                 flex-wrap: wrap;
-                row-gap: 30px;
+                row-gap: 5px;
                 justify-content: space-around;
                 img{
-                    width: 32%;
+                    width: 23%;
                     border-radius: 5px;
                 }
             }
@@ -135,7 +135,7 @@ body{
                     }
                 }
             }
-            @media(max-width:560px){
+            @media(max-width:460px){
                 padding:0vw 7vw 1vw 7vw;
                 .abouthead{
                     font-weight: $headingweight;
@@ -149,7 +149,7 @@ body{
                     
                     
                     img{
-                        width: 32%;
+                        width: 43%;
                     }
                 }
             }

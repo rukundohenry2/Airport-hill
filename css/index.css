@@ -92,11 +92,11 @@ body .middlepart .about .randimages {
   margin-top: 20px;
   display: flex;
   flex-wrap: wrap;
-  row-gap: 30px;
+  row-gap: 5px;
   justify-content: space-around;
 }
 body .middlepart .about .randimages img {
-  width: 32%;
+  width: 23%;
   border-radius: 5px;
 }
 @media (max-width: 700px) {
@@ -115,7 +115,7 @@ body .middlepart .about .randimages img {
     width: 32%;
   }
 }
-@media (max-width: 560px) {
+@media (max-width: 460px) {
   body .middlepart .about {
     padding: 0vw 7vw 1vw 7vw;
   }
@@ -128,7 +128,7 @@ body .middlepart .about .randimages img {
     font-size: small;
   }
   body .middlepart .about .randimages img {
-    width: 32%;
+    width: 43%;
   }
 }
 body .middlepart .services {
