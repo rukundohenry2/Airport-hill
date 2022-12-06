@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/HBF.css">
     <link rel="stylesheet" href="fonts/webfontkit-20221205-002729/stylesheet.css">
     <link rel="icon" type="image/x-icon" href="media/logo/AirportHill_Logo.png">
@@ -45,8 +46,13 @@
             <div class="randimages">
                 <img class="disimg" src="media/gallery/img4.jpg" alt="">
                 <img class="remimg" src="media/gallery/img5.jpg" alt="">
+                <img class="remimg" src="media/gallery/img6.jpg" alt="">
+                <img class="disimg" src="media/gallery/img7.jpg" alt="">
+                <img class="remimg" src="media/gallery/img8.jpg" alt="">
+                <img class="remimg" src="media/gallery/img9.jpg" alt="">
                 
             </div>
+            <a class="seemore" href="">See more images</a>
         </div>
         <div id="servelink" class="services">
             <h2 class="servicehead">SERVICES</h2>
@@ -89,9 +95,7 @@
                         nihil amet quasi maiores magni reiciendis doloribus natus, 
                         ipsa illo rem provident praesentium ad!
                     </p>
-                </div>
-                
-                
+                </div> 
             </div>
         </div>
         <div id="contlink" class="locdetails">
@@ -140,28 +144,6 @@
             <div></div>
         </div>
     </div>
-    <script>
-        
-        var prevScrollpos = window.pageYOffset
-        
-
-        function toggleMobileMenu(){
-            document.querySelector('#menuitem').classList.toggle('show')
-            document.body.style.overflowX = "hidden"
-        }
-        
-        var prevScrollpos = window.pageYOffset;
-        window.onscroll = function() {
-            var currentScrollPos = window.pageYOffset;
-            if (prevScrollpos > currentScrollPos) {
-                console.log("pull the menu bar out")
-                document.getElementById("topmen").style.top = "0"
-            } else {
-                document.getElementById("topmen").style.top = "-12vh"
-                console.log("make bar disappear")
-            }
-            prevScrollpos = currentScrollPos
-        }
-    </script>
+    <script src="js/main.js"></script>
 </body>
 </html>
