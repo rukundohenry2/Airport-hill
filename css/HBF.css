@@ -20,11 +20,11 @@ body .topmenu {
   flex-wrap: nowrap;
   justify-content: space-between;
   background-color: #fbfaf9;
-  padding: 15px;
+  padding: 2vh;
   transition: top 0.3s;
 }
 body .topmenu .menulogo {
-  height: 10vh;
+  height: 8vh;
 }
 body .topmenu #menuitem {
   height: -webkit-fit-content;
