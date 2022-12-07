@@ -1,0 +1,28 @@
+$generalstyle:'Poppins';
+$headingweight:500;
+$heading1weight:400;
+
+$colorbackground:#FBFAF9;
+$colorblack:#000000;
+$colormaroon:#490206;
+
+//phone sizes
+$headpc:x-large;
+$textpc:large;
+
+$headtab:larger;
+$texttab:large;
+
+$headphone:large;
+$textphone:small;
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-image: url('../media/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: $generalstyle;
+    
+}

@@ -1,0 +1,9 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background-image: url("../media/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "Poppins";
+}/*# sourceMappingURL=booking.css.map */

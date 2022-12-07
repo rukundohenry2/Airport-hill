@@ -4,12 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/HBF.css">
-    <link rel="stylesheet" href="fonts/webfontkit-20221205-002729/stylesheet.css">
-    <link rel="icon" type="image/x-icon" href="media/logo/AirportHill_Logo.png">
+    <link rel="stylesheet" href="../css/HBF.css">
+    <link rel="stylesheet" href="../fonts/webfontkit-20221205-002729/stylesheet.css">
+    <link rel="icon" type="image/x-icon" href="../media/logo/AirportHill_Logo.png">
     <title>Airport Hill</title>
 </head>
 <body>
-    <script src="js/main.js"></script>
+    <div class="footerpart">
+        <p>AirportHill &#169 2022</p>
+        <div class="bottomlinks">
+            
+            <a href="">Booking</a>|
+            <a href="">Privacy & legal</a>
+        </div>
+        <p class="copyair">Airporthill.com is property of Airporthill motel</p>
+    </div>
+    <div class="topmenu" id="topmen">
+        <img class="menulogo" src="../media/logo/AirportHill_Logo.png" alt="">
+        <div id="menuitem" onclick="toggleMobileMenu()">
+            <img class="innerlogo" src="../media/logo/AirportHill_Logo.png" alt="">
+            <a href="#servelink">HOME</a>
+            <a href="#servelink">SERVICES</a>
+            <a href="pages/booking.html">BOOKING</a>
+            <a href="#contlink">CONTACT US</a>
+            <img class="innerclose" src="../media/icons/close.png" alt="">
+        </div>
+        <div class="socialicons">
+            <a href=""><img src="../media/socialIcons/icons8_instagram_96px_2.png" alt=""></a>
+            <a href=""><img src="../media/socialIcons/icons8_facebook_96px_2.png" alt=""></a>
+            <a href=""><img src="../media/socialIcons/icons8_linkedin_96px_1.png" alt=""></a>
+        </div>
+        <div class="burger" onclick="toggleMobileMenu();">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <script src="../js/main.js"></script>
 </body>
 </html>
