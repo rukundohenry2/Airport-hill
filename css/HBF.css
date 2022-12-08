@@ -30,6 +30,9 @@ body .topmenu #menuitem a {
   font-weight: 500;
   margin-right: 20px;
 }
+body .topmenu #menuitem .disable {
+  color: gray;
+}
 body .topmenu #menuitem .innerlogo {
   display: none;
 }

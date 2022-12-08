@@ -19,10 +19,22 @@ $textphone:small;
 body{
     margin: 0px;
     padding: 0px;
-    background-image: url('../media/background.jpg');
+    background-image: url('../media/background2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     font-family: $generalstyle;
-    
+    overflow-x: hidden;
+    .topmenu{
+        .menuitem{
+            
+        }
+    }
+    .pagecontent{
+        background-color: #00000044;
+        padding-top: 12vh;
+        height: 100vh;
+        width: 100vw;
+        
+    }
 }

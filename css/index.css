@@ -145,13 +145,11 @@ body .middlepart .services .servicegroup {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  -moz-column-gap: 50px;
-       column-gap: 50px;
 }
 body .middlepart .services .servicegroup .servicetab {
   padding-bottom: 20px;
   text-align: center;
-  width: 25%;
+  width: 29%;
 }
 body .middlepart .services .servicegroup .servicetab .servImg {
   width: 100%;

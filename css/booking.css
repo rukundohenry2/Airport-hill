@@ -1,9 +1,16 @@
 body {
   margin: 0px;
   padding: 0px;
-  background-image: url("../media/background.jpg");
+  background-image: url("../media/background2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   font-family: "Poppins";
+  overflow-x: hidden;
+}
+body .pagecontent {
+  background-color: rgba(0, 0, 0, 0.2666666667);
+  padding-top: 12vh;
+  height: 100vh;
+  width: 100vw;
 }/*# sourceMappingURL=booking.css.map */

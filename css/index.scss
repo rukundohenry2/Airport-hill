@@ -128,8 +128,6 @@ body{
                     font-size: $textpc;
                 }
                 .randimages{
-                    
-                    
                     img{
                         width: 32%;
                     }
@@ -146,10 +144,8 @@ body{
                     font-size: $textphone;
                 }
                 .randimages{
-                    
-                    
                     img{
-                        width: 43%;
+                        width: 32%;
                     }
                 }
             }
@@ -168,12 +164,11 @@ body{
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: space-around;
-                column-gap: 50px;
                 
                 .servicetab{
                     padding-bottom: 20px;
                     text-align: center;
-                    width: 25%;
+                    width: 29%;
                     .servImg{
                         width: 100%;
                         border-radius: 100%;
