@@ -5,6 +5,7 @@ $heading1weight:400;
 $colorbackground:#FBFAF9;
 $colorblack:#000000;
 $colormaroon:#490206;
+$headcolor:#CF853C;
 
 //phone sizes
 $headpc:x-large;
@@ -101,6 +102,7 @@ body{
                 font-size:$headpc;
                 width: fit-content;
                 margin-bottom: 0px;
+                color: $headcolor;
             }
             .aboutdescription{
                 text-align: justify;
@@ -204,16 +206,6 @@ body{
                 .servicegroup{
                     .servicetab{
                         width: 40%;
-                        .servImg{
-                        }
-                        .servicedesc{
-                        }
-                        .minihead{
-                            .iconmini{  
-                            }
-                            .headserve{
-                            }
-                        }
                     }
                 }
             } 
@@ -329,6 +321,131 @@ body{
                         }
                         .contactform{
                             
+                        }
+                    }
+                    .mapouter{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+body{
+    .space{
+        @media(max-width:700px){
+            height: 50vh;
+            .placedesc{
+                font-size: 30px;
+            }
+            .viewicons{
+                img{
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+        }
+        @media(max-width:560px){
+            height: 30vh;
+            .placedesc{
+                font-size: 20px;
+            }
+            .viewicons{
+                img{
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+    }
+    //about part
+    .middlepart{
+        .about{
+            @media(max-width:700px){
+                padding:0vw 5vw 3vw 5vw ;
+                .abouthead{
+                    font-weight: $headingweight;
+                    font-size: $headtab;
+                }
+                .aboutdescription{
+                    text-align: justify;
+                    font-size: $textpc;
+                }
+                .randimages{
+                    img{
+                        width: 32%;
+                    }
+                }
+            }
+            @media(max-width:460px){
+                padding:0vw 7vw 1vw 7vw;
+                .abouthead{
+                    font-weight: $headingweight;
+                    font-size: $headphone;
+                }
+                .aboutdescription{
+                    text-align: justify;
+                    font-size: $textphone;
+                }
+                .randimages{
+                    img{
+                        width: 32%;
+                    }
+                }
+            }
+        }
+        .services{
+            @media(max-width:700px){
+                padding: 1vw 5vw 0vw 5vw;
+                
+                .servicehead{
+                    font-size: $headphone;
+                }
+            } 
+            @media(max-width:560px){
+                padding: 1vw 2vw 0vw 2vw;
+                .servicehead{
+                    font-size: $headphone;
+                }
+                .servicegroup{
+                    .servicetab{
+                        width: 95%;
+                        .servicedesc{
+                            font-size: $textphone;
+                        }
+                        .minihead{
+                            .iconmini{ 
+                                width: 18px;
+                                height: 18px; 
+                            }
+                            .headserve{
+                                font-size: 17px;
+                            }
+                        }
+                    }
+                }
+            } 
+        }
+        .locdetails{
+            @media (max-width:700px){
+                .lochead{
+                    font-size: $headphone;
+                }
+                .mapdetails{
+                    width: 100vw;
+                    flex-wrap: wrap;
+                    .mapdesc{
+                        width: 80%;
+                        margin-bottom: 20px;
+                        h3{
+                            font-size: 13px;
+                        }
+                        .contactform{
                         }
                     }
                     .mapouter{
