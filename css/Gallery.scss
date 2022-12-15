@@ -1,0 +1,116 @@
+$generalstyle:'Poppins';
+$headingweight:500;
+$heading1weight:400;
+
+$colorbackground:#FBFAF9;
+$colorblack:#000000;
+$colormaroon:#490206;
+
+//phone sizes
+$headpc:x-large;
+$textpc:large;
+
+$headtab:larger;
+$texttab:large;
+
+$headphone:large;
+$textphone:small;
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-image: url('../media/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: $generalstyle;
+    overflow-x: hidden;
+
+    .pagecontent{
+        background-color: #000000cd;
+        padding-top: 12vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        .spacer{
+            height: 50vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            h2{
+                width: fit-content;
+                border: 2px blue solid;
+                color: white;
+                font-weight: lighter;
+                font-family: 'black jack';
+                text-align: center;  
+            }   
+        }
+
+        .pictures{
+            width: 100%;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            h4{
+                color: $colormaroon;
+            }
+            
+            .gallery{
+                width: 80%;
+                margin: 20px 0px 20px 0px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                row-gap: 20px;
+                .general{
+                    width: 30%;
+                    cursor: pointer;
+                    img{
+                        width: 100%;
+                        border-radius: 10px;
+                        box-shadow:0 0 5px 1px black;
+                        
+                    }
+                    .closebtn{
+                        display: none;
+                    }
+                }
+            }
+            .gallery2{
+                width: 80%;
+                margin: 20px 0px 20px 0px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                row-gap: 20px;
+                .general{
+                    width: 30%;
+                    cursor: pointer;
+                    img{
+                        width: 100%;
+                        border-radius: 10px;
+                        box-shadow:0 0 5px 1px black;
+                        
+                    }
+                    .closebtn{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width:900px){
+
+}
+@media(max-width:720px){
+    
+}
+@media(max-width:560px){
+    
+}

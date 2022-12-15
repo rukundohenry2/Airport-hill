@@ -1,0 +1,84 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background-image: url("../media/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "Poppins";
+  overflow-x: hidden;
+}
+body .pagecontent {
+  background-color: rgba(0, 0, 0, 0.8039215686);
+  padding-top: 12vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .pagecontent .spacer {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+body .pagecontent .spacer h2 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: 2px blue solid;
+  color: white;
+  font-weight: lighter;
+  font-family: "black jack";
+  text-align: center;
+}
+body .pagecontent .pictures {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .pagecontent .pictures h4 {
+  color: #490206;
+}
+body .pagecontent .pictures .gallery {
+  width: 80%;
+  margin: 20px 0px 20px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  row-gap: 20px;
+}
+body .pagecontent .pictures .gallery .general {
+  width: 30%;
+  cursor: pointer;
+}
+body .pagecontent .pictures .gallery .general img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 1px black;
+}
+body .pagecontent .pictures .gallery .general .closebtn {
+  display: none;
+}
+body .pagecontent .pictures .gallery2 {
+  width: 80%;
+  margin: 20px 0px 20px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  row-gap: 20px;
+}
+body .pagecontent .pictures .gallery2 .general {
+  width: 30%;
+  cursor: pointer;
+}
+body .pagecontent .pictures .gallery2 .general img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 1px black;
+}
+body .pagecontent .pictures .gallery2 .general .closebtn {
+  display: none;
+}/*# sourceMappingURL=Gallery.css.map */

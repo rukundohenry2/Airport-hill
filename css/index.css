@@ -73,7 +73,6 @@ body .middlepart .about {
   background-color: #FBFAF9;
   display: flex;
   flex-direction: column;
-  padding: 0vw 10vw 3vw 10vw;
   align-items: center;
 }
 body .middlepart .about .abouthead {
@@ -83,23 +82,29 @@ body .middlepart .about .abouthead {
   width: -moz-fit-content;
   width: fit-content;
   margin-bottom: 0px;
+  color: #490206;
 }
 body .middlepart .about .aboutdescription {
   text-align: justify;
   font-size: large;
+  width: 60%;
 }
 body .middlepart .about .randimages {
   margin-top: 20px;
   display: flex;
   flex-wrap: wrap;
-  row-gap: 5px;
-  justify-content: space-around;
+  gap: 10px;
+  justify-content: center;
 }
-body .middlepart .about .randimages img {
-  width: 23%;
-  border-radius: 5px;
+body .middlepart .about .randimages .galimg {
+  width: 25%;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 1px black;
 }
-@media (max-width: 700px) {
+body .middlepart .about .randimages div.galimg {
+  background-color: #CF853C;
+}
+@media (max-width: 900px) {
   body .middlepart .about {
     padding: 0vw 5vw 3vw 5vw;
   }
@@ -110,12 +115,13 @@ body .middlepart .about .randimages img {
   body .middlepart .about .aboutdescription {
     text-align: justify;
     font-size: large;
+    width: 80%;
   }
   body .middlepart .about .randimages img {
-    width: 32%;
+    width: 22%;
   }
 }
-@media (max-width: 460px) {
+@media (max-width: 560px) {
   body .middlepart .about {
     padding: 0vw 7vw 1vw 7vw;
   }
@@ -126,6 +132,7 @@ body .middlepart .about .randimages img {
   body .middlepart .about .aboutdescription {
     text-align: justify;
     font-size: small;
+    width: 100%;
   }
   body .middlepart .about .randimages img {
     width: 32%;
