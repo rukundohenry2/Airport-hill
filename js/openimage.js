@@ -21,15 +21,17 @@ function openimage(imgclass){
     $("."+ imgclass +" .closebtn").css('right','5px')
     $("."+ imgclass +" .closebtn").css('width','50px')
 
-    if (document.body.clientWidth >=  720 && document.body.clientWidth <=  900 ){
-        $("."+ imgclass +" .currentimg").css('width','60%')
-    }
-    else if(document.body.clientWidth >=  560 && document.body.clientWidth <  720 ){
-        $("."+ imgclass +" .currentimg").css('width','80%')
-    }
-    else if(document.body.clientWidth <  560 ){
+    // if (document.body.clientWidth >=  720){
+    //     $("."+ imgclass +" .currentimg").css('width','60%')
+    // }
+    // else if(document.body.clientWidth >=  560 && document.body.clientWidth <  720 ){
+    //     $("."+ imgclass +" .currentimg").css('width','80%')
+    // }
+    $("."+ imgclass +" .currentimg").css('width','50%')
+    if(document.body.clientWidth <  560 ){
         $("."+ imgclass +" .currentimg").css('width','90%')
     }
+    
     
     $("."+ imgclass +" .currentimg").css('border-radius','20px')
     $("."+ imgclass +" .currentimg").css('box-shadow','0 0 0px 0px black')
@@ -45,6 +47,10 @@ function closeimage(){
     $('.'+previousimg).css('height','auto')
     $('.'+previousimg).css('left','auto')
     $('.'+previousimg).css('width','30%')
+    if(document.body.clientWidth <  560 ){
+        $('.'+previousimg).css('width','45%')
+    }
+    
     $('.'+previousimg).css('display','flex')
     $('.'+previousimg).css('flex-direction','column')
     $('.'+previousimg).css('justify-content','space-evenly')

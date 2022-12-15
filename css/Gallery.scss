@@ -19,7 +19,7 @@ $textphone:small;
 body{
     margin: 0px;
     padding: 0px;
-    background-image: url('../media/background.jpg');
+    background-image: url('../media/gallery.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -35,19 +35,23 @@ body{
         align-items: center;
         
         .spacer{
-            height: 50vh;
+            height: 70vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
-            h2{
+            align-items: center;
+            p{
                 width: fit-content;
                 color: white;
-                font-weight: lighter;
                 font-family: 'black jack';
+                font-size: 40px;
                 text-align: center;  
-            }   
+                margin: 0px;
+            }  
+            img{
+                width: 50px;
+            } 
         }
-
         .pictures{
             width: 100%;
             background-color: white;
@@ -94,7 +98,6 @@ body{
                         width: 100%;
                         border-radius: 10px;
                         box-shadow:0 0 5px 1px black;
-                        
                     }
                     .closebtn{
                         display: none;
@@ -111,5 +114,83 @@ body{
     
 }
 @media(max-width:560px){
+    body{
+        
     
+        .pagecontent{
+            
+            
+            .spacer{
+                height: 40vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                p{
+                    width: fit-content;
+                    color: white;
+                    font-family: 'black jack';
+                    font-size: 30px;
+                    text-align: center;  
+                    margin: 0px;
+                }  
+                img{
+                    width: 40px;
+                } 
+            }
+            .pictures{
+                width: 100%;
+                background-color: white;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                
+                h4{
+                    color: $colormaroon;
+                }
+                
+                .gallery{
+                    width: 100%;
+                    margin: 20px 0px 20px 0px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-evenly;
+                    row-gap: 10px;
+                    .general{
+                        width: 45%;
+                        cursor: pointer;
+                        img{
+                            width: 100%;
+                            border-radius: 10px;
+                            box-shadow:0 0 5px 1px black;
+                            
+                        }
+                        .closebtn{
+                            display: none;
+                        }
+                    }
+                }
+                .gallery2{
+                    width: 100%;
+                    margin: 20px 0px 20px 0px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-evenly;
+                    row-gap: 20px;
+                    .general{
+                        width: 45%;
+                        cursor: pointer;
+                        img{
+                            width: 100%;
+                            border-radius: 10px;
+                            box-shadow:0 0 5px 1px black;
+                        }
+                        .closebtn{
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

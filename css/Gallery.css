@@ -1,7 +1,7 @@
 body {
   margin: 0px;
   padding: 0px;
-  background-image: url("../media/background.jpg");
+  background-image: url("../media/gallery.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -17,19 +17,24 @@ body .pagecontent {
   align-items: center;
 }
 body .pagecontent .spacer {
-  height: 50vh;
+  height: 70vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
-body .pagecontent .spacer h2 {
+body .pagecontent .spacer p {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   color: white;
-  font-weight: lighter;
   font-family: "black jack";
+  font-size: 40px;
   text-align: center;
+  margin: 0px;
+}
+body .pagecontent .spacer img {
+  width: 50px;
 }
 body .pagecontent .pictures {
   width: 100%;
@@ -80,4 +85,77 @@ body .pagecontent .pictures .gallery2 .general img {
 }
 body .pagecontent .pictures .gallery2 .general .closebtn {
   display: none;
+}
+
+@media (max-width: 560px) {
+  body .pagecontent .spacer {
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  body .pagecontent .spacer p {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    color: white;
+    font-family: "black jack";
+    font-size: 30px;
+    text-align: center;
+    margin: 0px;
+  }
+  body .pagecontent .spacer img {
+    width: 40px;
+  }
+  body .pagecontent .pictures {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  body .pagecontent .pictures h4 {
+    color: #490206;
+  }
+  body .pagecontent .pictures .gallery {
+    width: 100%;
+    margin: 20px 0px 20px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    row-gap: 10px;
+  }
+  body .pagecontent .pictures .gallery .general {
+    width: 45%;
+    cursor: pointer;
+  }
+  body .pagecontent .pictures .gallery .general img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 1px black;
+  }
+  body .pagecontent .pictures .gallery .general .closebtn {
+    display: none;
+  }
+  body .pagecontent .pictures .gallery2 {
+    width: 100%;
+    margin: 20px 0px 20px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    row-gap: 20px;
+  }
+  body .pagecontent .pictures .gallery2 .general {
+    width: 45%;
+    cursor: pointer;
+  }
+  body .pagecontent .pictures .gallery2 .general img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 1px black;
+  }
+  body .pagecontent .pictures .gallery2 .general .closebtn {
+    display: none;
+  }
 }/*# sourceMappingURL=Gallery.css.map */
