@@ -111,25 +111,172 @@ body .topmenu .burger div {
   }
 }
 body .footerpart {
-  background-color: rgba(0, 0, 0, 0.8274509804);
+  background-color: rgba(0, 0, 0, 0.9019607843);
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   padding: 0px 20px 0px 20px;
   color: white;
   align-items: center;
 }
-body .footerpart .bottomlinks a {
+body .footerpart hr {
+  color: white;
+  width: 100%;
+}
+body .footerpart .footertabs {
+  margin-top: 20px;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  border-radius: 10px;
+}
+body .footerpart .footertabs .newsletter {
+  width: 25%;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.709);
+}
+body .footerpart .footertabs .newsletter p {
+  font-size: larger;
+  margin-bottom: 30px;
+}
+body .footerpart .footertabs .newsletter .subscribe {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+body .footerpart .footertabs .newsletter .subscribe input {
+  height: 20px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+body .footerpart .footertabs .newsletter .subscribe button {
+  padding: 10px;
+  align-self: center;
+  width: 50%;
+  border-radius: 0;
+  border: 0px red solid;
+}
+body .footerpart .footertabs .reachus {
+  width: 25%;
+  height: 100%;
+  padding: 15px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.709);
+}
+body .footerpart .footertabs .reachus p {
+  margin-top: 10px;
+}
+body .footerpart .footertabs .reachus .mainhead {
+  font-size: larger;
+  margin-bottom: 10px;
+}
+body .footerpart .footertabs .reachus .subhead {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+body .footerpart .footertabs .reachus .general {
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+}
+body .footerpart .footertabs .reachus .general img {
+  width: 15px;
+  height: 15px;
+}
+body .footerpart .footertabs .reachus .general p {
+  margin-top: 0;
+}
+body .footerpart .footertabs .quicklinks {
+  width: 25%;
+  border-radius: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.709);
+}
+body .footerpart .footertabs .quicklinks .mainhead {
+  font-size: larger;
+  margin-bottom: 10px;
+}
+body .footerpart .footertabs .quicklinks .links {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 20px;
+  width: 25%;
+  border-radius: 10px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  row-gap: 20px;
+}
+body .footerpart .footertabs .quicklinks .links a {
+  text-decoration: none;
+  color: #FFF6EC;
+  padding-left: 20px;
+  font-style: "blackjack";
+}
+body .footerpart .footerinfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+body .footerpart .footerinfo .bottomlinks a {
   text-decoration: none;
   color: white;
 }
-@media (max-width: 560px) {
-  body .footerpart {
+@media (max-width: 900px) {
+  body .footerpart .footertabs {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     justify-content: space-around;
+    border-radius: 10px;
+    align-items: center;
+    gap: 20px;
   }
-  body .footerpart .bottomlinks {
+  body .footerpart .footertabs .newsletter {
+    width: 60%;
+  }
+  body .footerpart .footertabs .reachus {
+    width: 60%;
+  }
+  body .footerpart .footertabs .quicklinks {
+    width: 60%;
+  }
+}
+@media (max-width: 560px) {
+  body .footerpart .footertabs {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-around;
+    border-radius: 10px;
+    align-items: center;
+    gap: 20px;
+  }
+  body .footerpart .footertabs .newsletter {
+    width: 90%;
+  }
+  body .footerpart .footertabs .reachus {
+    width: 90%;
+  }
+  body .footerpart .footertabs .quicklinks {
+    width: 90%;
+  }
+  body .footerpart .footerinfo .bottomlinks {
     display: none;
   }
-  body .footerpart .copyair {
+  body .footerpart .footerinfo .copyair {
     display: none;
   }
 }/*# sourceMappingURL=HBF.css.map */
