@@ -1,0 +1,99 @@
+$generalstyle:'Poppins';
+$headingweight:500;
+$heading1weight:400;
+
+$colorbackground:#FBFAF9;
+$colorblack:#000000;
+$colormaroon:#490206;
+
+//phone sizes
+$headpc:x-large;
+$textpc:large;
+
+$headtab:larger;
+$texttab:large;
+
+$headphone:large;
+$textphone:small;
+
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-image: url('../media/background3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: $generalstyle;
+    overflow-x: hidden;
+
+    .space{
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #000000af;
+        padding-top: 12vh;
+        
+        .placedesc{
+            color: white;
+            width: fit-content;
+            font-size: 40px;
+            font-family: "black jack";
+            text-transform:capitalize;
+        }
+        .viewicons{
+            
+            height: fit-content;
+            width: 20vw;
+            display: flex;
+            justify-content: space-around;
+            
+            img{
+                width: 50px;
+                height: 50px;
+            }
+        }
+        @media(max-width:700px){
+            height: 50vh;
+            .placedesc{
+                font-size: 30px;
+            }
+            .viewicons{
+                img{
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+        }
+        @media(max-width:560px){
+            height: 30vh;
+            width: auto;
+            .placedesc{
+                font-size: 20px;
+            }
+            .viewicons{
+                img{
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }   
+    }
+    .pagecontent{
+        width: 100%;
+        background-color: white;
+        display: flex;
+        
+        flex-direction: column;
+        align-items: center;
+        p{
+           width: 50%;
+           text-align: justify;
+        } 
+        .contactus{
+            display: flex;
+        }
+    }
+}

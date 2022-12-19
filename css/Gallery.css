@@ -16,26 +16,60 @@ body .pagecontent {
   flex-direction: column;
   align-items: center;
 }
-body .pagecontent .spacer {
-  height: 70vh;
-  width: 100%;
+body .pagecontent .space {
+  height: 50vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.6862745098);
+  padding-top: 12vh;
 }
-body .pagecontent .spacer p {
+body .pagecontent .space .placedesc {
+  color: white;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  color: white;
-  font-family: "black jack";
   font-size: 40px;
-  text-align: center;
-  margin: 0px;
+  font-family: "black jack";
+  text-transform: capitalize;
 }
-body .pagecontent .spacer img {
+body .pagecontent .space .viewicons {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 30vw;
+  display: flex;
+  justify-content: space-around;
+}
+body .pagecontent .space .viewicons img {
   width: 50px;
+  height: 50px;
+}
+@media (max-width: 700px) {
+  body .pagecontent .space {
+    height: 50vh;
+  }
+  body .pagecontent .space .placedesc {
+    font-size: 30px;
+  }
+  body .pagecontent .space .viewicons img {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media (max-width: 560px) {
+  body .pagecontent .space {
+    height: 30vh;
+    width: auto;
+  }
+  body .pagecontent .space .placedesc {
+    font-size: 20px;
+  }
+  body .pagecontent .space .viewicons img {
+    width: 20px;
+    height: 20px;
+  }
 }
 body .pagecontent .pictures {
   width: 100%;

@@ -34,28 +34,59 @@ body{
         flex-direction: column;
         align-items: center;
         
-        .spacer{
-            height: 70vh;
-            width: 100%;
-            
-            
-            
-            
+        .space{
+            height: 50vh;
             display: flex;
             flex-direction: column;
-            justify-content: center;
             align-items: center;
-            p{
-                width: fit-content;
+            justify-content: center;
+            background-color: #000000af;
+            padding-top: 12vh;
+            
+            .placedesc{
                 color: white;
-                font-family: 'black jack';
+                width: fit-content;
                 font-size: 40px;
-                text-align: center;  
-                margin: 0px;
-            }  
-            img{
-                width: 50px;
-            } 
+                font-family: "black jack";
+                text-transform:capitalize;
+            }
+            .viewicons{
+                
+                height: fit-content;
+                width: 30vw;
+                display: flex;
+                justify-content: space-around;
+                
+                img{
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+            @media(max-width:700px){
+                height: 50vh;
+                .placedesc{
+                    font-size: 30px;
+                }
+                .viewicons{
+                    img{
+                        width: 40px;
+                        height: 40px;
+                    }
+                }
+            }
+            @media(max-width:560px){
+                height: 30vh;
+                width: auto;
+                .placedesc{
+                    font-size: 20px;
+                }
+                .viewicons{
+                    img{
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+            }   
         }
         .pictures{
             width: 100%;
