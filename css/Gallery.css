@@ -8,16 +8,8 @@ body {
   font-family: "Poppins";
   overflow-x: hidden;
 }
-body .pagecontent {
-  background-color: rgba(0, 0, 0, 0.8039215686);
-  padding-top: 12vh;
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-body .pagecontent .space {
-  height: 50vh;
+body .space {
+  height: 60vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -25,7 +17,7 @@ body .pagecontent .space {
   background-color: rgba(0, 0, 0, 0.6862745098);
   padding-top: 12vh;
 }
-body .pagecontent .space .placedesc {
+body .space .placedesc {
   color: white;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -34,42 +26,25 @@ body .pagecontent .space .placedesc {
   font-family: "black jack";
   text-transform: capitalize;
 }
-body .pagecontent .space .viewicons {
+body .space .viewicons {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  width: 30vw;
+  width: 20vw;
   display: flex;
   justify-content: space-around;
 }
-body .pagecontent .space .viewicons img {
+body .space .viewicons img {
   width: 50px;
   height: 50px;
 }
-@media (max-width: 700px) {
-  body .pagecontent .space {
-    height: 50vh;
-  }
-  body .pagecontent .space .placedesc {
-    font-size: 30px;
-  }
-  body .pagecontent .space .viewicons img {
-    width: 40px;
-    height: 40px;
-  }
-}
-@media (max-width: 560px) {
-  body .pagecontent .space {
-    height: 30vh;
-    width: auto;
-  }
-  body .pagecontent .space .placedesc {
-    font-size: 20px;
-  }
-  body .pagecontent .space .viewicons img {
-    width: 20px;
-    height: 20px;
-  }
+body .pagecontent {
+  background-color: rgba(0, 0, 0, 0.8039215686);
+  padding-top: 12vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 body .pagecontent .pictures {
   width: 100%;

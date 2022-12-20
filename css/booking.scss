@@ -25,16 +25,47 @@ body{
     background-attachment: fixed;
     font-family: $generalstyle;
     overflow-x: hidden;
-    .topmenu{
-        .menuitem{
-            
-        }
-    }
-    .pagecontent{
-        background-color: #00000044;
+    
+    .space{
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #000000af;
         padding-top: 12vh;
-        height: 100vh;
-        width: 100vw;
-        
+        .placedesc{
+            color: white;
+            width: fit-content;
+            font-size: 40px;
+            font-family: "black jack";
+            text-transform:capitalize;
+        }
+        .viewicons{
+            
+            height: fit-content;
+            width: 20vw;
+            display: flex;
+            justify-content: space-around;
+            
+            img{
+                width: 50px;
+                height: 50px;
+            }
+        } 
+    }
+    
+    .pagecontent{
+        background-color: white;
+
+        .bookdesc{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            p{
+                width: 70%;
+            }
+        }
     }
 }

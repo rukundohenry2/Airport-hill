@@ -1,0 +1,113 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background-image: url("../media/background4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "Poppins";
+  overflow-x: hidden;
+}
+body .space {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.6862745098);
+}
+body .space .placedesc {
+  color: white;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 40px;
+  font-family: "black jack";
+  text-transform: capitalize;
+}
+body .space .viewicons {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 20vw;
+  display: flex;
+  justify-content: space-around;
+}
+body .space .viewicons img {
+  width: 50px;
+  height: 50px;
+}
+body .pagecontent .services {
+  background-color: #FFF6EC;
+  justify-content: space-around;
+  padding: 1vw 10vw 0vw 10vw;
+}
+body .pagecontent .services .servicehead {
+  font-weight: 500;
+  text-align: center;
+  font-size: x-large;
+}
+body .pagecontent .services .servicegroup {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+body .pagecontent .services .servicegroup .servicetab {
+  padding-bottom: 20px;
+  text-align: center;
+  width: 29%;
+}
+body .pagecontent .services .servicegroup .servicetab .servImg {
+  width: 100%;
+  border-radius: 100%;
+}
+body .pagecontent .services .servicegroup .servicetab .servicedesc {
+  text-align: justify;
+  margin-top: 0;
+  font-size: large;
+}
+body .pagecontent .services .servicegroup .servicetab .minihead {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .pagecontent .services .servicegroup .servicetab .minihead .iconmini {
+  width: 20px;
+  height: 20px;
+}
+body .pagecontent .services .servicegroup .servicetab .minihead .headserve {
+  font-weight: 500;
+  margin: 15px 0px 15px 10px;
+}
+@media (max-width: 700px) {
+  body .pagecontent .services {
+    padding: 1vw 5vw 0vw 5vw;
+  }
+  body .pagecontent .services .servicehead {
+    font-size: large;
+  }
+  body .pagecontent .services .servicegroup .servicetab {
+    width: 40%;
+  }
+}
+@media (max-width: 560px) {
+  body .pagecontent .services {
+    padding: 1vw 2vw 0vw 2vw;
+  }
+  body .pagecontent .services .servicehead {
+    font-size: large;
+  }
+  body .pagecontent .services .servicegroup .servicetab {
+    width: 95%;
+  }
+  body .pagecontent .services .servicegroup .servicetab .servicedesc {
+    font-size: small;
+  }
+  body .pagecontent .services .servicegroup .servicetab .minihead .iconmini {
+    width: 18px;
+    height: 18px;
+  }
+  body .pagecontent .services .servicegroup .servicetab .minihead .headserve {
+    font-size: 17px;
+  }
+}/*# sourceMappingURL=services.css.map */
