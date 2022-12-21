@@ -99,44 +99,84 @@ body{
                     }
                 }
             }
-            @media(max-width:700px){
-                padding: 1vw 5vw 0vw 5vw;
+        }
+    }
+}
+
+@media(max-width:560px){
+    body{
+        .space{
+            height: 40vh;
+            display: flex;
+            padding-top: 12vh;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #000000af;
+            
+            .placedesc{
+                color: white;
+                width: fit-content;
+                font-size: 30px;
                 
-                .servicehead{
-                    font-size: $headphone;
-                    
-                }
-                .servicegroup{
-                    .servicetab{
-                        width: 40%;
-                    }
+            }
+            .viewicons{
+                height: fit-content;
+                width: 20vw;
+                display: flex;
+                justify-content: space-around;
+                
+                img{
+                    width: 30px;
+                    height: 30px;
                 }
             } 
-            @media(max-width:560px){
-                padding: 1vw 2vw 0vw 2vw;
+        }
+        .pagecontent{
+            .services{
+ 
                 .servicehead{
-                    font-size: $headphone;
+                    font-weight: $headingweight;
+                    text-align: center;
+                    font-size: $headpc;
                 }
                 .servicegroup{
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    justify-content: space-around;
+                    align-items: center;
+                    
                     .servicetab{
+                        padding-bottom: 20px;
+                        text-align: center;
                         width: 95%;
                         .servImg{
+                            width: 100%;
+                            border-radius: 100%;
                         }
                         .servicedesc{
-                            font-size: $textphone;
+                            text-align: justify;
+                            margin-top: 0;
+                            font-size: $textpc;
                         }
                         .minihead{
-                            .iconmini{ 
-                                width: 18px;
-                                height: 18px; 
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                           
+                            .iconmini{
+                                width: 20px;
+                                height: 20px;
                             }
                             .headserve{
-                                font-size: 17px;
+                                font-weight: 500;
+                                margin: 15px 0px 15px 10px;
                             }
                         }
                     }
                 }
-            } 
+            }
         }
     }
 }

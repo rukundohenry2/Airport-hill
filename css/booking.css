@@ -49,4 +49,49 @@ body .pagecontent .bookdesc {
 }
 body .pagecontent .bookdesc p {
   width: 70%;
+}
+
+@media (max-width: 560px) {
+  body .space {
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.6862745098);
+    padding-top: 12vh;
+  }
+  body .space .placedesc {
+    color: white;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    font-size: 30px;
+    font-family: "black jack";
+    text-transform: capitalize;
+  }
+  body .space .viewicons {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: 20vw;
+    display: flex;
+    justify-content: space-around;
+  }
+  body .space .viewicons img {
+    width: 30px;
+    height: 30px;
+  }
+  body .pagecontent {
+    background-color: white;
+  }
+  body .pagecontent .bookdesc {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  body .pagecontent .bookdesc p {
+    width: 90%;
+  }
 }/*# sourceMappingURL=booking.css.map */

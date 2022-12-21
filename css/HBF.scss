@@ -181,9 +181,9 @@ body{
             }
             .reachus{
                 width: 25%;
-                height: 100%;
+                
                 padding: 15px;
-                height: max-content;
+                
                 display: flex;
                 flex-direction: column;
                 border-radius: 10px;
@@ -209,7 +209,9 @@ body{
                         height: 15px;
                     }
                     p{
+                        margin-left: 10px;
                         margin-top: 0;
+                        margin-bottom:0 ;
                     }
                 }
             }

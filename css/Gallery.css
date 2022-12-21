@@ -9,7 +9,7 @@ body {
   overflow-x: hidden;
 }
 body .space {
-  height: 60vh;
+  height: 70vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -40,7 +40,6 @@ body .space .viewicons img {
 }
 body .pagecontent {
   background-color: rgba(0, 0, 0, 0.8039215686);
-  padding-top: 12vh;
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -98,25 +97,35 @@ body .pagecontent .pictures .gallery2 .general .closebtn {
 }
 
 @media (max-width: 560px) {
-  body .pagecontent .spacer {
+  body .space {
     height: 40vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.6862745098);
+    padding-top: 12vh;
   }
-  body .pagecontent .spacer p {
+  body .space .placedesc {
+    color: white;
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
-    color: white;
+    font-size: 40px;
     font-family: "black jack";
-    font-size: 30px;
-    text-align: center;
-    margin: 0px;
+    text-transform: capitalize;
   }
-  body .pagecontent .spacer img {
-    width: 40px;
+  body .space .viewicons {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: 20vw;
+    display: flex;
+    justify-content: space-around;
+  }
+  body .space .viewicons img {
+    width: 30px;
+    height: 30px;
   }
   body .pagecontent .pictures {
     width: 100%;

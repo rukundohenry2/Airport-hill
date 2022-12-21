@@ -160,11 +160,7 @@ body .footerpart .footertabs .newsletter .subscribe button {
 }
 body .footerpart .footertabs .reachus {
   width: 25%;
-  height: 100%;
   padding: 15px;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
   display: flex;
   flex-direction: column;
   border-radius: 10px;
@@ -191,7 +187,9 @@ body .footerpart .footertabs .reachus .general img {
   height: 15px;
 }
 body .footerpart .footertabs .reachus .general p {
+  margin-left: 10px;
   margin-top: 0;
+  margin-bottom: 0;
 }
 body .footerpart .footertabs .quicklinks {
   width: 25%;

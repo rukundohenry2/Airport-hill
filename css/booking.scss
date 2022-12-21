@@ -66,3 +66,49 @@ body{
         }
     }
 }
+
+@media(max-width:560px){
+    body{
+       
+        
+        .space{
+            height: 40vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #000000af;
+            padding-top: 12vh;
+            .placedesc{
+                color: white;
+                width: fit-content;
+                font-size: 30px;
+                font-family: "black jack";
+                text-transform:capitalize;
+            }
+            .viewicons{
+                height: fit-content;
+                width: 20vw;
+                display: flex;
+                justify-content: space-around;
+                img{
+                    width: 30px;
+                    height: 30px;
+                }
+            } 
+        }
+        
+        .pagecontent{
+            background-color: white;
+            .bookdesc{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                p{
+                    width: 90%;
+                }
+            }
+        }
+    }
+}
