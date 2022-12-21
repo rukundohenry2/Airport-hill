@@ -154,55 +154,65 @@ body{
 @media(max-width:560px){
     body{
         .space{
-            height: 50vh;
+            height: 40vh;
             .placedesc{
                 font-size: 30px;
             }
             .viewicons{
                 img{
-                    width: 40px;
-                    height: 40px;
+                    width: 30px;
+                    height: 30px;
                 }
             }
         }
-        
         .pagecontent{
             p{
-                width: 50%;
+                width: 90%;
                 text-align: justify;
             } 
             .contactus{
                 display: flex;
+                .contbox{
+                    width: 95%;
+                    flex-direction: column;
+                    align-items: center;
+                    .contdetails{
+                        width: 100%;
+                    }
+                    .contform{
+                        width: 90%;
+                    }
+                }
             }
         }
     }
 }
 
-@media(max-width:700px){
-    body{
+// @media(max-width:700px){
+//     body{
 
-        .space{
+//         .space{
             
-            height: 30vh;
-            width: auto;
-            .placedesc{
-                font-size: 20px;
-            }
-            .viewicons{
-                img{
-                    width: 20px;
-                    height: 20px;
-                }
-            } 
-        }
-        .pagecontent{
-            p{
-                width: 50%;
-                text-align: justify;
-            } 
-            .contactus{
-                display: flex;
-            }
-        }
-    }
-}
+//             height: 30vh;
+//             width: auto;
+//             .placedesc{
+//                 font-size: 20px;
+//             }
+//             .viewicons{
+//                 img{
+//                     width: 20px;
+//                     height: 20px;
+//                 }
+//             } 
+//         }
+//         .pagecontent{
+//             p{
+//                 width: 50%;
+//                 text-align: justify;
+//             } 
+//             .contactus{
+//                 display: flex;
+//             }
+//         }
+//     }
+// }

@@ -124,40 +124,31 @@ body .pagecontent .contactus .contbox .contform .contactform .submitbutton {
 }
 @media (max-width: 560px) {
   body .space {
-    height: 50vh;
+    height: 40vh;
   }
   body .space .placedesc {
     font-size: 30px;
   }
   body .space .viewicons img {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
   }
   body .pagecontent p {
-    width: 50%;
+    width: 90%;
     text-align: justify;
   }
   body .pagecontent .contactus {
     display: flex;
   }
-}
-@media (max-width: 700px) {
-  body .space {
-    height: 30vh;
-    width: auto;
+  body .pagecontent .contactus .contbox {
+    width: 95%;
+    flex-direction: column;
+    align-items: center;
   }
-  body .space .placedesc {
-    font-size: 20px;
+  body .pagecontent .contactus .contbox .contdetails {
+    width: 100%;
   }
-  body .space .viewicons img {
-    width: 20px;
-    height: 20px;
-  }
-  body .pagecontent p {
-    width: 50%;
-    text-align: justify;
-  }
-  body .pagecontent .contactus {
-    display: flex;
+  body .pagecontent .contactus .contbox .contform {
+    width: 90%;
   }
 }/*# sourceMappingURL=contact.css.map */
