@@ -5,14 +5,22 @@ function toggleMobileMenu(){
 }
 
 var prevScrollpos = window.pageYOffset;
+console.log("henry in the building")
 window.onscroll = function() {
     var currentScrollPos = window.pageYOffset;
-    if (prevScrollpos > currentScrollPos) {
-        console.log("pull the menu bar out")
+    console.log(currentScrollPos)
+    if( currentScrollPos<100){
         document.getElementById("topmen").style.top = "0"
-    } else {
-        document.getElementById("topmen").style.top = "-12vh"
-        console.log("make bar disappear")
     }
+    else{
+        if (prevScrollpos > currentScrollPos) {
+       
+            document.getElementById("topmen").style.top = "0"
+        } else {
+            document.getElementById("topmen").style.top = "-12vh"
+           
+        }
+    }
+    
     prevScrollpos = currentScrollPos
 }
