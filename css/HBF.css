@@ -2,6 +2,36 @@ html {
   scroll-behavior: smooth;
 }
 
+body .space {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.6862745098);
+  padding-top: 12vh;
+}
+body .space .placedesc {
+  color: white;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 40px;
+  font-family: "black jack";
+  text-transform: capitalize;
+}
+body .space .viewicons {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 30vw;
+  display: flex;
+  justify-content: space-around;
+}
+body .space .viewicons img {
+  width: 50px;
+  height: 50px;
+}
 body .topmenu {
   position: fixed;
   top: 0px;
@@ -276,5 +306,38 @@ body .footerpart .footerinfo .bottomlinks a {
   }
   body .footerpart .footerinfo .copyair {
     display: none;
+  }
+}
+
+@media (max-width: 560px) {
+  body .space {
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.6862745098);
+    padding-top: 12vh;
+  }
+  body .space .placedesc {
+    color: white;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    font-size: 25px;
+    font-family: "black jack";
+    text-transform: capitalize;
+  }
+  body .space .viewicons {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: 30vw;
+    display: flex;
+    justify-content: space-around;
+  }
+  body .space .viewicons img {
+    width: 30px;
+    height: 30px;
   }
 }/*# sourceMappingURL=HBF.css.map */

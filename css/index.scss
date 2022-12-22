@@ -25,38 +25,6 @@ body{
     background-size: cover;
     background-attachment: fixed;
     font-family: $generalstyle;
-
-    .space{
-        height: 70vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        background-color: #000000af;
-        padding-top: 12vh;
-        
-        .placedesc{
-            color: white;
-            width: fit-content;
-            font-size: 40px;
-            font-family: "black jack";
-            text-transform:capitalize;
-        }
-        .viewicons{
-            
-            height: fit-content;
-            width: 30vw;
-            display: flex;
-            justify-content: space-around;
-            
-            img{
-                width: 50px;
-                height: 50px;
-            }
-        }
-        
-    }
-    
     
     //about part
     .middlepart{
@@ -229,36 +197,7 @@ body{
         background-attachment: fixed;
         font-family: $generalstyle;
     
-        .space{
-            height: 40vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            background-color: #000000af;
-            padding-top: 12vh;
-            
-            .placedesc{
-                color: white;
-                width: fit-content;
-                font-size: 30px;
-                font-family: "black jack";
-                text-transform:capitalize;
-            }
-            .viewicons{
-                
-                height: fit-content;
-                width: 30vw;
-                display: flex;
-                justify-content: space-around;
-                
-                img{
-                    width: 30px;
-                    height: 30px;
-                }
-            }
-            
-        }
+        
         
         
         //about part

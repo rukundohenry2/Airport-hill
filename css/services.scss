@@ -26,34 +26,7 @@ body{
     font-family: $generalstyle;
     overflow-x: hidden;
 
-    .space{
-        height: 70vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        background-color: #000000af;
-        
-        .placedesc{
-            color: white;
-            width: fit-content;
-            font-size: 40px;
-            font-family: "black jack";
-            text-transform:capitalize;
-        }
-        .viewicons{
-            
-            height: fit-content;
-            width: 20vw;
-            display: flex;
-            justify-content: space-around;
-            
-            img{
-                width: 50px;
-                height: 50px;
-            }
-        } 
-    }
+    
     .pagecontent{
         
         .services{
@@ -106,33 +79,7 @@ body{
 
 @media(max-width:560px){
     body{
-        .space{
-            height: 40vh;
-            display: flex;
-            padding-top: 12vh;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            background-color: #000000af;
-            
-            .placedesc{
-                color: white;
-                width: fit-content;
-                font-size: 30px;
-                
-            }
-            .viewicons{
-                height: fit-content;
-                width: 20vw;
-                display: flex;
-                justify-content: space-around;
-                
-                img{
-                    width: 30px;
-                    height: 30px;
-                }
-            } 
-        }
+        
         .pagecontent{
             .services{
                 .servicehead{

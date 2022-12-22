@@ -123,16 +123,6 @@ body .pagecontent .contactus .contbox .contform .contactform .submitbutton {
   margin: 10px;
 }
 @media (max-width: 560px) {
-  body .space {
-    height: 40vh;
-  }
-  body .space .placedesc {
-    font-size: 30px;
-  }
-  body .space .viewicons img {
-    width: 30px;
-    height: 30px;
-  }
   body .pagecontent p {
     width: 90%;
     text-align: justify;

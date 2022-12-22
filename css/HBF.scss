@@ -20,6 +20,36 @@ html {
     scroll-behavior: smooth;
   }
 body{
+    .space{
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #000000af;
+        padding-top: 12vh;
+        
+        .placedesc{
+            color: white;
+            width: fit-content;
+            font-size: 40px;
+            font-family: "black jack";
+            text-transform:capitalize;
+        }
+        .viewicons{
+            
+            height: fit-content;
+            width: 30vw;
+            display: flex;
+            justify-content: space-around;
+            
+            img{
+                width: 50px;
+                height: 50px;
+            }
+        }
+        
+    }
     
     .topmenu{
         position: fixed;
@@ -312,4 +342,38 @@ body{
             }
         }
     }   
+}
+
+@media(max-width:560px){
+    body{
+        .space{
+            height: 40vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #000000af;
+            padding-top: 12vh;
+            
+            .placedesc{
+                color: white;
+                width: fit-content;
+                font-size: 25px;
+                font-family: "black jack";
+                text-transform:capitalize;
+            }
+            .viewicons{
+                
+                height: fit-content;
+                width: 30vw;
+                display: flex;
+                justify-content: space-around;
+                
+                img{
+                    width: 30px;
+                    height: 30px;
+                }
+            } 
+        }
+    }
 }
