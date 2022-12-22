@@ -54,30 +54,6 @@ body{
                 height: 50px;
             }
         }
-        @media(max-width:700px){
-            height: 50vh;
-            .placedesc{
-                font-size: 30px;
-            }
-            .viewicons{
-                img{
-                    width: 40px;
-                    height: 40px;
-                }
-            }
-        }
-        @media(max-width:560px){
-            height: 30vh;
-            .placedesc{
-                font-size: 20px;
-            }
-            .viewicons{
-                img{
-                    width: 20px;
-                    height: 20px;
-                }
-            }
-        }
         
     }
     
@@ -123,40 +99,6 @@ body{
                     background-color: $headcolor;
                 }
             }
-            @media(max-width:900px){
-                padding:0vw 5vw 3vw 5vw ;
-                .abouthead{
-                    font-weight: $headingweight;
-                    font-size: $headtab;
-                }
-                .aboutdescription{
-                    text-align: justify;
-                    font-size: $textpc;
-                    width: 80%;
-                }
-                .randimages{
-                    img{
-                        width: 22%;
-                    }
-                }
-            }
-            @media(max-width:560px){
-                padding:0vw 7vw 1vw 7vw;
-                .abouthead{
-                    font-weight: $headingweight;
-                    font-size: $headphone;
-                }
-                .aboutdescription{
-                    text-align: justify;
-                    font-size: $textphone;
-                    width: 100%;
-                }
-                .randimages{
-                    img{
-                        width: 32%;
-                    }
-                }
-            }
         }
         .services{
             background-color: #FFF6EC;
@@ -198,44 +140,6 @@ body{
                         .headserve{
                             font-weight: 500;
                             margin: 15px 0px 15px 10px;
-                        }
-                    }
-                }
-            }
-            @media(max-width:700px){
-                padding: 1vw 5vw 0vw 5vw;
-                
-                .servicehead{
-                    font-size: $headphone;
-                    
-                }
-                .servicegroup{
-                    .servicetab{
-                        width: 40%;
-                    }
-                }
-            } 
-            @media(max-width:560px){
-                padding: 1vw 2vw 0vw 2vw;
-                .servicehead{
-                    font-size: $headphone;
-                }
-                .servicegroup{
-                    .servicetab{
-                        width: 95%;
-                        .servImg{
-                        }
-                        .servicedesc{
-                            font-size: $textphone;
-                        }
-                        .minihead{
-                            .iconmini{ 
-                                width: 18px;
-                                height: 18px; 
-                            }
-                            .headserve{
-                                font-size: 17px;
-                            }
                         }
                     }
                 }
@@ -310,155 +214,213 @@ body{
                     }
                 } 
             }  
-    
-            @media (max-width:700px){
-                .lochead{
-                    font-size: $headphone;
-                }
-                .mapdetails{
-                    width: 100vw;
-                    flex-wrap: wrap;
-                    .mapdesc{
-                        width: 80%;
-                        margin-bottom: 20px;
-                        h3{
-                            font-size: 13px;
-                        }
-                        .contactform{
-                            
-                        }
-                    }
-                    .mapouter{
-                        width: 100%;
-                    }
-                }
-            }
         }
     }
 }
 
 
-
-
-
-// body{
-//     .space{
-//         @media(max-width:700px){
-//             height: 50vh;
-//             .placedesc{
-//                 font-size: 30px;
-//             }
-//             .viewicons{
-//                 img{
-//                     width: 40px;
-//                     height: 40px;
-//                 }
-//             }
-//         }
-//         @media(max-width:560px){
-//             height: 30vh;
-//             .placedesc{
-//                 font-size: 20px;
-//             }
-//             .viewicons{
-//                 img{
-//                     width: 20px;
-//                     height: 20px;
-//                 }
-//             }
-//         }
-//     }
-//     //about part
-//     .middlepart{
-//         .about{
-//             @media(max-width:700px){
-//                 padding:0vw 5vw 3vw 5vw ;
-//                 .abouthead{
-//                     font-weight: $headingweight;
-//                     font-size: $headtab;
-//                 }
-//                 .aboutdescription{
-//                     text-align: justify;
-//                     font-size: $textpc;
-//                 }
-//                 .randimages{
-//                     img{
-//                         width: 32%;
-//                     }
-//                 }
-//             }
-//             @media(max-width:460px){
-//                 padding:0vw 7vw 1vw 7vw;
-//                 .abouthead{
-//                     font-weight: $headingweight;
-//                     font-size: $headphone;
-//                 }
-//                 .aboutdescription{
-//                     text-align: justify;
-//                     font-size: $textphone;
-//                 }
-//                 .randimages{
-//                     img{
-//                         width: 32%;
-//                     }
-//                 }
-//             }
-//         }
-//         .services{
-//             @media(max-width:700px){
-//                 padding: 1vw 5vw 0vw 5vw;
+@media(max-width:560px){
+    body{
+        margin: 0px;
+        padding: 0px;
+        background-image: url('../media/background.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        font-family: $generalstyle;
+    
+        .space{
+            height: 40vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #000000af;
+            padding-top: 12vh;
+            
+            .placedesc{
+                color: white;
+                width: fit-content;
+                font-size: 30px;
+                font-family: "black jack";
+                text-transform:capitalize;
+            }
+            .viewicons{
                 
-//                 .servicehead{
-//                     font-size: $headphone;
-//                 }
-//             } 
-//             @media(max-width:560px){
-//                 padding: 1vw 2vw 0vw 2vw;
-//                 .servicehead{
-//                     font-size: $headphone;
-//                 }
-//                 .servicegroup{
-//                     .servicetab{
-//                         width: 95%;
-//                         .servicedesc{
-//                             font-size: $textphone;
-//                         }
-//                         .minihead{
-//                             .iconmini{ 
-//                                 width: 18px;
-//                                 height: 18px; 
-//                             }
-//                             .headserve{
-//                                 font-size: 17px;
-//                             }
-//                         }
-//                     }
-//                 }
-//             } 
-//         }
-//         .locdetails{
-//             @media (max-width:700px){
-//                 .lochead{
-//                     font-size: $headphone;
-//                 }
-//                 .mapdetails{
-//                     width: 100vw;
-//                     flex-wrap: wrap;
-//                     .mapdesc{
-//                         width: 80%;
-//                         margin-bottom: 20px;
-//                         h3{
-//                             font-size: 13px;
-//                         }
-//                         .contactform{
-//                         }
-//                     }
-//                     .mapouter{
-//                         width: 100%;
-//                     }
-//                 }
-//             }
-//         }
-//     }
-// }
+                height: fit-content;
+                width: 30vw;
+                display: flex;
+                justify-content: space-around;
+                
+                img{
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+            
+        }
+        
+        
+        //about part
+        .middlepart{
+            background-color: $colorbackground;
+            .seemore{
+                margin-top: 20px;
+                margin-bottom: 20px;
+                text-decoration: none;
+            }
+            .about{
+                background-color: $colorbackground;
+                display: flex;
+                flex-direction: column;
+                //padding:0vw 10vw 3vw 10vw ;
+                align-items: center;
+                .abouthead{
+                    font-weight: $headingweight;
+                    font-size:$headpc;
+                    width: fit-content;
+                    margin-bottom: 0px;
+                    color: $colormaroon;
+                }
+                .aboutdescription{
+                    text-align: justify;
+                    font-size:$textpc;
+                    width: 90%;
+                }
+                .randimages{
+                    margin-top: 20px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 10px;
+                    justify-content: center;
+                    .galimg{
+                        width: 25%;
+                        border-radius: 10px;
+                        box-shadow:0 0 5px 1px black;
+                    }
+                    div.galimg{
+                        background-color: $headcolor;
+                    }
+                }
+            }
+            .services{
+                background-color: #FFF6EC;
+                justify-content: space-around;
+                padding: 1vw 10vw 0vw 10vw;
+                
+                .servicehead{
+                    font-weight: $headingweight;
+                    text-align: center;
+                    font-size: $headpc;
+                }
+                .servicegroup{
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    justify-content: space-around;
+                    align-items: center;
+                    .servicetab{
+                        padding-bottom: 20px;
+                        text-align: center;
+                        width: 100%;
+                        .servImg{
+                            width: 100%;
+                            border-radius: 100%;
+                        }
+                        .servicedesc{
+                            text-align: justify;
+                            margin-top: 0;
+                            font-size: $textpc;
+                        }
+                        .minihead{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                           
+                            .iconmini{
+                                width: 20px;
+                                height: 20px;
+                            }
+                            .headserve{
+                                font-weight: 500;
+                                margin: 15px 0px 15px 10px;
+                            }
+                        }
+                    }
+                }
+            }
+            .locdetails{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+        
+                .lochead{
+                    
+                    font-weight: $headingweight;
+                    text-align: center;
+                }
+                .mapdetails{
+                    width: 80vw;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    margin-bottom: 50px;
+                    column-gap: 20px;
+                    .mapouter{
+                        width: 100%;
+                        margin: 0% 0% 0% 0%;
+                    }
+                    .mapdesc{
+                        width: 100%;
+                        h3{
+                            font-family: $generalstyle;
+                            font-size: medium;
+                            font-weight: $headingweight;
+                            color: $colormaroon;
+                        }
+                        .contactform{
+                            display: flex;
+                            flex-direction: column;
+                            .formcomponent{
+                                border-radius: 0px;
+                                border: rgb(153, 153, 153) solid 1px;
+                                height: 40px;
+                                width: 96%;
+                                margin-bottom:30px ;
+                                padding-left: 10px;
+                                padding-right: 10px;
+                                
+                                &::placeholder{
+                                    font-family: $generalstyle;
+                                }
+                            }
+                            #formcomponent{
+                                border-radius: 0px;
+                                border: rgb(153, 153, 153) solid 1px;
+                                width: 96%;
+                                margin-bottom:30px ;
+                                padding-left: 10px;
+                                padding-right: 10px;
+                                
+                                &::placeholder{
+                                    font-family: $generalstyle;
+                                }
+                            }
+                            .submitbutton{
+                                align-self: center;
+                                border-radius: 0px;
+                                border: rgb(153, 153, 153) solid 0px;
+                                background-color: $colormaroon;
+                                width: 35%;
+                                height: 30px;
+                                color: white;
+                            }
+                        }
+                    } 
+                }  
+            }
+        }
+    }
+}
   
