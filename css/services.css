@@ -40,7 +40,6 @@ body .space .viewicons img {
 body .pagecontent .services {
   background-color: #FFF6EC;
   justify-content: space-around;
-  padding: 1vw 10vw 0vw 10vw;
 }
 body .pagecontent .services .servicehead {
   font-weight: 500;

@@ -58,7 +58,6 @@ body{
         .services{
             background-color: #FFF6EC;
             justify-content: space-around;
-            padding: 1vw 10vw 0vw 10vw;
             
             .servicehead{
                 font-weight: $headingweight;
@@ -148,7 +147,7 @@ body{
                     .servicetab{
                         padding-bottom: 20px;
                         text-align: center;
-                        width: 98%;
+                        width: 95%;
                         .servImg{
                             width: 100%;
                             border-radius: 100%;
