@@ -18,7 +18,6 @@ window.onscroll = function() {
             document.getElementById("topmen").style.top = "0"
         } else {
             document.getElementById("topmen").style.top = "-12vh"
-           
         }
     }
     
