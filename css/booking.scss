@@ -38,6 +38,41 @@ body{
             p{
                 width: 70%;
             }
+            h3{
+
+            }
+            .bookingsection{
+                width: 70%;
+                display: flex;
+                align-items: center;
+                img{
+                    width: 50%;
+                }
+                .imgdesc{
+                   
+                    height: fit-content;
+                    width: fit-content;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    p{
+                        text-align: justify;
+                        width: 80%;
+                    }
+                    
+                    a{
+                        text-decoration: none;
+                        font-size: 30px;
+                        color: white;
+                        background-color: $colormaroon;
+                        
+                        padding: 5px 10px 5px 10px;
+                        border-radius: 0px;
+                        margin: 10px 10px;
+                        cursor: pointer;
+                    }
+                }
+            } 
         }
     }
 }
@@ -55,6 +90,41 @@ body{
                 p{
                     width: 90%;
                 }
+                h3{
+
+                }
+                .bookingsection{
+                    width: 90%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    img{
+                        width: 100%;
+                    }
+                    .imgdesc{
+                       
+                        height: fit-content;
+                        width: fit-content;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        p{
+                            text-align: justify;
+                            width: 90%;
+                        }
+                        a{
+                            text-decoration: none;
+                            font-size: 30px;
+                            color: white;
+                            background-color: $colormaroon;
+                            
+                            padding: 5px 10px 5px 10px;
+                            border-radius: 0px;
+                            margin: 10px 10px;
+                            cursor: pointer;
+                        }
+                    }
+                } 
             }
         }
     }

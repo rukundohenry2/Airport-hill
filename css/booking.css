@@ -20,6 +20,39 @@ body .pagecontent .bookdesc {
 body .pagecontent .bookdesc p {
   width: 70%;
 }
+body .pagecontent .bookdesc .bookingsection {
+  width: 70%;
+  display: flex;
+  align-items: center;
+}
+body .pagecontent .bookdesc .bookingsection img {
+  width: 50%;
+}
+body .pagecontent .bookdesc .bookingsection .imgdesc {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .pagecontent .bookdesc .bookingsection .imgdesc p {
+  text-align: justify;
+  width: 80%;
+}
+body .pagecontent .bookdesc .bookingsection .imgdesc a {
+  text-decoration: none;
+  font-size: 30px;
+  color: white;
+  background-color: #490206;
+  padding: 5px 10px 5px 10px;
+  border-radius: 0px;
+  margin: 10px 10px;
+  cursor: pointer;
+}
 
 @media (max-width: 560px) {
   body .pagecontent {
@@ -33,5 +66,39 @@ body .pagecontent .bookdesc p {
   }
   body .pagecontent .bookdesc p {
     width: 90%;
+  }
+  body .pagecontent .bookdesc .bookingsection {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  body .pagecontent .bookdesc .bookingsection img {
+    width: 100%;
+  }
+  body .pagecontent .bookdesc .bookingsection .imgdesc {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  body .pagecontent .bookdesc .bookingsection .imgdesc p {
+    text-align: justify;
+    width: 90%;
+  }
+  body .pagecontent .bookdesc .bookingsection .imgdesc a {
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+    background-color: #490206;
+    padding: 5px 10px 5px 10px;
+    border-radius: 0px;
+    margin: 10px 10px;
+    cursor: pointer;
   }
 }/*# sourceMappingURL=booking.css.map */
