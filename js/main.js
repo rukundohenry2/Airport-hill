@@ -14,7 +14,6 @@ window.onscroll = function() {
     }
     else{
         if (prevScrollpos > currentScrollPos) {
-       
             document.getElementById("topmen").style.top = "0"
         } else {
             document.getElementById("topmen").style.top = "-12vh"

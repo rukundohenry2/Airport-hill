@@ -61,6 +61,7 @@ body .pagecontent .services .servicegroup .servicetab .minihead .headserve {
 @media (max-width: 560px) {
   body .pagecontent .services {
     width: 95%;
+    padding: 1vw 5vw 0vw 5vw;
   }
   body .pagecontent .services .servicehead {
     font-weight: 500;
@@ -84,6 +85,7 @@ body .pagecontent .services .servicegroup .servicetab .minihead .headserve {
     border-radius: 100%;
   }
   body .pagecontent .services .servicegroup .servicetab .servicedesc {
+    border: red 2px solid;
     text-align: justify;
     margin-top: 0;
     font-size: large;
@@ -101,4 +103,4 @@ body .pagecontent .services .servicegroup .servicetab .minihead .headserve {
     font-weight: 500;
     margin: 15px 0px 15px 10px;
   }
-}/*# sourceMappingURL=services.css.map */
+}
